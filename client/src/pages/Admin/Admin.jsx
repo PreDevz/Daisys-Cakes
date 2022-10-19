@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Styles 
-import "./admin.css";
+import "./admin.scss";
 
 const Admin = () => {
   return (
