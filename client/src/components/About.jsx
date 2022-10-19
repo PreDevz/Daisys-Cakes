@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Styles 
-import "../styles/aboutComp.css";
+import "../styles/aboutComp.scss";
 
 const About = () => {
   return (

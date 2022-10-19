@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Styles 
-import "../styles/featComp.css";
+import "../styles/featComp.scss";
 
 const Featured = () => {
   return (

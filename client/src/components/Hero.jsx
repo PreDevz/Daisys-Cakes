@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Styles
-import "../styles/heroComp.css";
+import "../styles/heroComp.scss";
 
 const Hero = () => {
   return (
