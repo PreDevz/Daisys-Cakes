@@ -1,11 +1,16 @@
 import React from 'react'
 
 // Components 
-import Navbar from "../../components/Navbar"
+import { Navbar, Hero, About, Featured, Footer } from "../../components"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <Hero />
+      <Featured />
+      <About />
+      <Footer />
+    </>
   )
 }
 
