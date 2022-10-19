@@ -4,7 +4,7 @@ import React from 'react';
 import { Hero, About, Featured } from "../../components";
 
 // Styles 
-import "./home.css";
+import "./home.scss";
 
 const Home = ({ currentPage, handlePageChange }) => {
   return (
