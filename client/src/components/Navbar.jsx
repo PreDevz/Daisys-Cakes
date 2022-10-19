@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Styles
-import "../styles/navbarComp.scss";
+import "../sass/components/navbarComp.scss";
 
 const Navbar = ({ currentPage, handlePageChange }) => {
   return (
