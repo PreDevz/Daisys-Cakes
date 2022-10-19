@@ -12,6 +12,8 @@
 	box-sizing: border-box;
 }
 
+/* Global Selectors  */
+
 body {
 	font-family: "Open Sans", sans-serif;
 	width: 100%;

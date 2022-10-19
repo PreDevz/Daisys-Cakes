@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 // Component 
 import { Navbar, Footer } from "../components";
+
 // Pages 
 import { Home, About, Contact, Admin } from "./index";
 

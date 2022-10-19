@@ -5,7 +5,7 @@ import "./admin.css";
 
 const Admin = () => {
   return (
-    <div>Admin</div>
+    <div id="adminPage">Admin</div>
   )
 }
 

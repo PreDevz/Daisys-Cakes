@@ -6,7 +6,7 @@ import { Hero, About, Featured } from "../../components";
 // Styles 
 import "./home.css";
 
-const Home = () => {
+const Home = ({ currentPage, handlePageChange }) => {
   return (
     <>
       <Hero />
