@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "watch": "nodemon server.js",
-    "seed": "node seeders/seed.js"
+    "seed": "node seeders/seed.js",
+    "lint": "eslint --fix ."
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "mongoose": "^6.1.8"
   },
   "devDependencies": {
+    "eslint": "^8.25.0",
     "nodemon": "^2.0.3"
   }
 }

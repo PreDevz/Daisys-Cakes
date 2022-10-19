@@ -1,8 +1,8 @@
 /* Destructuring the Schema and model properties from the mongoose module. */
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
 /* Importing the bcrypt module. */
-const bcrypt = require('bcrypt');
+const bcrypt = require("bcrypt");
 
 /* This is creating a new schema for the admin model. */
 const adminSchema = new Schema({
@@ -16,7 +16,7 @@ const adminSchema = new Schema({
         type: String,
         required: true,
         unique: true,
-        match: [/.+@.+\..+/, 'Must match an email address!'],
+        match: [/.+@.+\..+/, "Must match an email address!"],
     },
     password: {
         type: String,
@@ -26,8 +26,8 @@ const adminSchema = new Schema({
 });
 
 /* This is a pre-save hook that will hash the password before saving it to the database. */
-adminSchema.pre('save', async function (next) {
-    if (this.isNew || this.isModified('password')) {
+adminSchema.pre("save", async function (next) {
+    if (this.isNew || this.isModified("password")) {
         const saltRounds = 10;
         this.password = await bcrypt.hash(this.password, saltRounds);
     }
@@ -42,7 +42,7 @@ adminSchema.methods.isCorrectPassword = async function (password) {
 };
 
 /* Creating a new model called Admin. */
-const Admin = model('Admin', adminSchema);
+const Admin = model("Admin", adminSchema);
 
 /* Exporting the Admin model so that it can be used in other files. */
-module.exports = Admin
+module.exports = Admin;
