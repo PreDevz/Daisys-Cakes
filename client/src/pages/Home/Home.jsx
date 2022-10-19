@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 // Components 
-import { Navbar, Hero, About, Featured, Footer } from "../../components"
+import { Hero, About, Featured } from "../../components";
 
 const Home = () => {
   return (
@@ -9,9 +9,8 @@ const Home = () => {
       <Hero />
       <Featured />
       <About />
-      <Footer />
     </>
   )
 }
 
-export default Home
+export default Home;

@@ -2,7 +2,7 @@
 // Components 
 import DaisyCakesContainer from "./pages/DaisyCakesContainer";
 
-import "./index.css"
+import "./index.css";
 
 function App() {
   return (

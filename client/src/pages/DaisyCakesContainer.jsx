@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 
 // Component 
 import { Navbar, Footer } from "../components";
-import Home from "./Home/Home";
+// Pages 
+import { Home, About, Contact, Admin } from "./index";
 
 const DaisyCakesContainer = () => {
 
@@ -25,8 +26,8 @@ const DaisyCakesContainer = () => {
 
       <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
     </>
-    
+
   )
 }
 
-export default DaisyCakesContainer
+export default DaisyCakesContainer;
