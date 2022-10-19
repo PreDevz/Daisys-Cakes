@@ -1,0 +1,61 @@
+/* Sweet Alert Styles  */
+
+.swal-modal {
+	background-color: #070421;
+	border: 1px solid rgb(30, 112, 255);
+}
+
+.swal-title {
+	color: #fff;
+}
+
+.swal-text {
+	color: #fff;
+}
+
+/* Sweet Alert button  */
+
+.swal-button {
+	padding: 7px 19px;
+	border-radius: 2px;
+	font-size: 15px;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+	outline: none;
+	border: 1px solid #040010;
+	padding: 0.7rem 1.5rem;
+	border-radius: 5px;
+	transition: all 400ms ease;
+	color: white;
+	background-color: rgba(45, 127, 178, 0.325);
+}
+
+.swal-button:hover {
+	color: black;
+	background-color: transparent;
+}
+
+/* Sweet Alert Overlays  */
+
+.swal-overlay {
+	background-color: rgba(0, 0, 0, 0.682);
+}
+
+/* Sweet Alert Icons  */
+
+.swal-icon {
+	background-color: #070421;
+	gap: 0;
+}
+.swal-icon::after {
+	background-color: #070421;
+}
+.swal-icon::before {
+	background-color: #070421;
+}
+.swal-icon--success__hide-corners {
+	background-color: #070421;
+	padding: 0;
+	top: -13px;
+	width: 25px;
+	height: 128px;
+}
