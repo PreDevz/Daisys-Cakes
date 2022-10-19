@@ -1,4 +1,4 @@
-const Admin = require('./Admin');
+const Admin = require("./Admin");
 
 
-module.exports = { Admin }
+module.exports = { Admin };
