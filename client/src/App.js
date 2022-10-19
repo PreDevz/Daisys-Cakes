@@ -4,7 +4,7 @@
 import DaisyCakesContainer from "./pages/DaisyCakesContainer";
 
 // Styles 
-import "./index.css";
+import "./index.scss";
 
 function App() {
   return (
