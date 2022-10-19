@@ -1,8 +1,11 @@
 import React from 'react';
 
+// Styles
+import "../styles/navbarComp.css";
+
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="navbar">
       Navbar
     </nav>
   )

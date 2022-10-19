@@ -1,8 +1,11 @@
 import React from 'react';
 
+// Styles 
+import "../styles/footerComp.css";
+
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer-section">
       Footer Section 
     </footer>
   )
