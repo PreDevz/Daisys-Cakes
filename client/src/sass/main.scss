@@ -4,6 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
+// Import Colors 
+
+@import "./variables/coreVars.scss";
+
 /* Universal Resetter  */
 
 * {
@@ -17,6 +21,7 @@
 body {
 	font-family: "Open Sans", sans-serif;
 	width: 100%;
+	background-color: $dark-clr;
 }
 
 li {
