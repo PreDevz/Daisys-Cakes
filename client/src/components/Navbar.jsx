@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // Styles
 import "../sass/components/navbarComp.scss";
+import Logo from "../assets/daisylogo.png";
 
 function Navbar() {
   // State for whether the hamburger menu is active
@@ -13,7 +14,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="#" className="nav-branding">
-        {"Daisy's Cakes 🎂"}
+        <img id="logo" src={Logo} alt="Daisy's Cakes Logo" />
       </a>
 
       <ul className={`nav-menu ${isActive ? "" : "active"}`}>
@@ -28,8 +29,14 @@ function Navbar() {
           </a>
         </li>
         <li className="nav-item">
-          <a onClick={handleToggle} href="#" className="nav-link">
-            Portfolio
+          <a
+            onClick={handleToggle}
+            href="https://www.instagram.com/daisycakes87"
+            target="_blank"
+            rel="noreferrer"
+            className="nav-link"
+          >
+            Instagram
           </a>
         </li>
         <li className="nav-item">
@@ -39,7 +46,7 @@ function Navbar() {
         </li>
         <li className="nav-item">
           <a onClick={handleToggle} href="#" className="nav-link">
-            Resume
+            Log In
           </a>
         </li>
       </ul>

@@ -1,13 +1,5 @@
 /* Navbar Component Styles  */
-
-li {
-  list-style: none;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
+@import "../variables/coreVars.scss";
 
 .navbar {
   min-height: 70px;
@@ -15,6 +7,20 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  background-color: #f5f5f5;
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+#logo {
+  height: 75px;
 }
 
 .nav-menu {
@@ -24,12 +30,8 @@ a {
   gap: 60px;
 }
 
-.nav-branding {
-  font-size: 2rem;
-}
-
 .nav-link {
-  transition: 0.7s ease;
+  transition: 0.3s ease;
 }
 
 .nav-link:hover {
@@ -48,7 +50,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: black;
 }
 
 @media (max-width: 768px) {
@@ -74,7 +76,7 @@ a {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: gray;
+    background-color: #f5f5f5;
     width: 100%;
     text-align: center;
     transition: 0.3s;
