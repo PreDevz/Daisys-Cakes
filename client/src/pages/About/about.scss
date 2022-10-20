@@ -1,0 +1,25 @@
+#aboutPage {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-self: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-page-s1 {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.about-page-img {
+  max-width: 500px;
+}

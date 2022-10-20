@@ -32,6 +32,15 @@ a {
 	text-decoration: none;
 }
 
+// headers 
+h1 {
+	font-weight: bold;
+	font-size: 3.5rem;
+	color: $second-clr;
+	border-bottom: 1px solid $light-clr;
+	width: fit-content;
+}
+
 .container {
 	max-width: 1065px;
 }
