@@ -13,9 +13,10 @@ const About = () => {
         <div className="about-container">
 
           <h2>Mission Statement</h2>
-          <section className="about-page-s1">
+          <section className="about-page-s1 about-page-s">
             
             <div className="about-page-s1-left">
+              <div>Our Mission at <span>Daisy&#39;s Cakes</span>...</div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci saepe nesciunt soluta praesentium veritatis cumque similique dolorem, nulla vero quasi corrupti quidem voluptate ullam magni magnam velit officiis deserunt cupiditate?</p>
             </div>
 
@@ -26,7 +27,7 @@ const About = () => {
           </section>
 
           <h2>We are About...</h2>
-          <section className="about-page-s2">
+          <section className="about-page-s2 about-page-s">
 
             <div className="about-page-s2-right">
               <img src="https://img.freepik.com/free-photo/ingredients-cook-recipe-pink_144627-24731.jpg?w=1380&t=st=1666295389~exp=1666295989~hmac=fef1648b96b0a201051762a81feeade32e4a74f83b079a8273fbd10f23377ecb" alt="" className="about-page-img" />

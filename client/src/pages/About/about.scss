@@ -1,7 +1,6 @@
-#aboutPage {
-  width: 100%;
-  min-height: 100vh;
-}
+// About Page Styles 
+
+@import "../../sass/main.scss"; 
 
 .about-container {
   display: flex;
@@ -12,14 +11,25 @@
   margin: 0 auto;
 }
 
-.about-page-s1 {
+.about-page-s {
   display: flex;
   flex-direction: row;
   height: 50vh;
   width: 100%;
+  gap: 5%;
   justify-content: center;
-}
+  margin: 1rem 0;
 
-.about-page-img {
-  max-width: 500px;
+  .about-page-s1-left div {
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+    span {
+      color: $prime-dark-clr;
+    }
+  }
+
+  .about-page-img {
+    max-width: 500px;
+  }
 }

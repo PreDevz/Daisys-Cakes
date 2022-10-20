@@ -8,6 +8,14 @@
 
 @import "./variables/coreVars.scss";
 
+// Import Components 
+
+@import "./components/aboutComp.scss";
+@import "./components/featComp.scss";
+@import "./components/footerComp.scss";
+@import "./components/heroComp.scss";
+@import "./components/navbarComp.scss";
+
 /* Universal Resetter  */
 
 * {
