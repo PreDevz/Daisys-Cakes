@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 // Styles 
 import "./admin.scss";
@@ -6,7 +6,7 @@ import "./admin.scss";
 const Admin = () => {
   return (
     <div id="adminPage">Admin</div>
-  )
-}
+  );
+};
 
 export default Admin;

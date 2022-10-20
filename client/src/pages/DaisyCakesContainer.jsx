@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // Component 
 import { Navbar, Footer } from "../components";
@@ -8,28 +8,28 @@ import { Home, About, Contact, Admin } from "./index";
 
 const DaisyCakesContainer = () => {
 
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState("Home");
 
   // check which page the user is currently on 
   const renderPage = () => {
 
     // Change to Home Page 
-    if (currentPage === 'Home') {
+    if (currentPage === "Home") {
       return <Home currentPage={currentPage} handlePageChange={handlePageChange} />; 
     }
 
     // Change to About Page 
-    if (currentPage === 'About') {
+    if (currentPage === "About") {
       return <About currentPage={currentPage} handlePageChange={handlePageChange} />; 
     }
 
     // Change to Contact Page 
-    if (currentPage === 'Contact') {
+    if (currentPage === "Contact") {
       return <Contact currentPage={currentPage} handlePageChange={handlePageChange} />; 
     }
 
     // Change to Admin Page 
-    if (currentPage === 'Admin') {
+    if (currentPage === "Admin") {
       return <Admin currentPage={currentPage} handlePageChange={handlePageChange} />; 
     }
   };
@@ -45,7 +45,7 @@ const DaisyCakesContainer = () => {
 
       <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
     </>
-  )
-}
+  );
+};
 
 export default DaisyCakesContainer;
