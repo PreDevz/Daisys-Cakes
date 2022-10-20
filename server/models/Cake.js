@@ -1,5 +1,3 @@
-// This model will be for every cake
-// Should include: title, description, image url(s), 
 const { Schema, model } = require('mongoose');
 
 const cakeSchema = new Schema({
@@ -12,11 +10,7 @@ const cakeSchema = new Schema({
     type: String,
     required: true
   },
-  cakeUrl: [
-    {
-      url: String
-    }
-  ]
+  cakeUrl: [String]
 })
 
 const Cake = model('Cake', cakeSchema);
