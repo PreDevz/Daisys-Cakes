@@ -1,0 +1,33 @@
+/* Core CSS File  */
+
+/* Open Sans Google Font  */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+// Import Colors 
+
+@import "./variables/coreVars.scss";
+
+/* Universal Resetter  */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global Selectors  */
+
+body {
+	font-family: "Open Sans", sans-serif;
+	width: 100%;
+	background-color: $dark-clr;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
