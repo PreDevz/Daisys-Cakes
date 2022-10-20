@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="#" className="nav-branding">
-        Anthony Quinones
+        {"Daisy's Cakes 🎂"}
       </a>
 
       <ul className={`nav-menu ${isActive ? "" : "active"}`}>
