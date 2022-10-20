@@ -1,7 +1,5 @@
 const { gql } = require("apollo-server-express");
 
-module.exports = typeDefs;
-
 const typeDefs = gql`
   type Admin {
     _id: ID
