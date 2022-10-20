@@ -5,7 +5,7 @@
 .about-container {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 2rem 0;
   align-self: center;
   width: 100%;
   margin: 0 auto;
@@ -14,18 +14,18 @@
 .about-page-s {
   display: flex;
   flex-direction: row;
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   gap: 5%;
   justify-content: center;
-  margin: 1rem 0;
+  margin-top: 1.8rem;
 
   .about-page-s1-left div {
     font-size: 1.3rem;
     font-weight: bold;
     
     span {
-      color: $prime-dark-clr;
+      color: $accent-dark-clr;
     }
   }
 
