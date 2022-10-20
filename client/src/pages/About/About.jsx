@@ -17,7 +17,11 @@ const About = () => {
             
             <div className="about-page-s1-left">
               <div>Our Mission at <span>Daisy&#39;s Cakes</span>...</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci saepe nesciunt soluta praesentium veritatis cumque similique dolorem, nulla vero quasi corrupti quidem voluptate ullam magni magnam velit officiis deserunt cupiditate?</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci saepe nesciunt soluta praesentium veritatis cumque similique dolorem, nulla vero quasi corrupti quidem voluptate ullam magni magnam velit officiis deserunt cupiditate?
+                <br />
+                <br />
+                m ipsum dolor sit amet, consectetur adipisicing elit. Adipisci saepe nesciunt soluta praesentium veritatis cumque similique dolorem, nulla vero quasi corrupti quidem volupdipisci saepe nesciunt soluta praesentium veritatis cumque similidipisci saepe nesciunt soluta praesentium veritatis cumque similidipisci saepe nesciunt soluta praesentium veritatis cumque similique dolorem, nulla vero quasi corrupti quidem volupdipisc!
+              </p>
             </div>
 
             <div className="about-page-s1-right">
@@ -26,7 +30,7 @@ const About = () => {
 
           </section>
 
-          <h2>We are About...</h2>
+          <h2>Daisy&#39;s Cakes</h2>
           <section className="about-page-s2 about-page-s">
 
             <div className="about-page-s2-right">
@@ -34,7 +38,11 @@ const About = () => {
             </div>
 
             <div className="about-page-s2-left">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci saepe nesciunt soluta praesentium veritatis cumque similique dolorem, nulla vero quasi corrupti quidem voluptate ullam magni magnam velit officiis deserunt cupiditate?</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci saepe nesciunt soluta praesentium veritatis cumque similique dolorem, nulla vero quasi corrupti quidem voluptate ullam magni magnam velit officiis deserunt cupiditate?
+                <br />
+                <br />
+                onsectetur adipisicing elit. Adipisci saepe nesciunt soluta praesentium veritatis cumque similique dolorem, nulla vero quasi corrupti quidem voluptatesaepe nesciunt soluta praesentium veritatis csaepe nesciunt soluta praesentium veritatis c ullam magn
+              </p>
             </div>
 
           </section>

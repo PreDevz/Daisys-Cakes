@@ -29,7 +29,7 @@
 body {
 	font-family: "Open Sans", sans-serif;
 	width: 100%;
-	background-color: $mid-light-clr;
+	background-color: #F5F5F5;
 }
 
 li {
@@ -45,10 +45,15 @@ a {
 h1 {
 	font-weight: bold;
 	font-size: 3.5rem;
-	color: $second-dark-clr;
-	border-bottom: 1px solid $second-dark-clr;
+	color: #ed0280;
+	border-bottom: 1px solid #ed0280;
 	width: fit-content;
-	margin: 2rem 0;
+	margin: 2rem auto;
+}
+
+h2 {
+	font-size: 2.2rem;
+	color: $accent-dark-clr;
 }
 
 // Global Class Selectors 
@@ -56,6 +61,7 @@ h1 {
 .page {
 	padding: 2.5rem 2rem;
 	min-height: 100vh;
+	width: 100%;
 }
 
 .container {
