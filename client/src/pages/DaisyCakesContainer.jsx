@@ -1,50 +1,43 @@
 import React, { useState } from "react";
 
-// Component 
+// Component
 import { Navbar, Footer } from "../components";
 
-// Pages 
+// Pages
 import { Home, About, Contact, Admin } from "./index";
 
 const DaisyCakesContainer = () => {
+  const [currentPage, setCurrentPage] = useState("About");
 
-  const [currentPage, setCurrentPage] = useState("Home");
-
-  // check which page the user is currently on 
+  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render. Defaults to Home if an error occurs.
   const renderPage = () => {
-
-    // Change to Home Page 
     if (currentPage === "Home") {
-      return <Home currentPage={currentPage} handlePageChange={handlePageChange} />; 
+      return <Home />;
     }
-
-    // Change to About Page 
     if (currentPage === "About") {
-      return <About currentPage={currentPage} handlePageChange={handlePageChange} />; 
+      return <About />;
     }
-
-    // Change to Contact Page 
     if (currentPage === "Contact") {
-      return <Contact currentPage={currentPage} handlePageChange={handlePageChange} />; 
+      return <Contact />;
     }
-
-    // Change to Admin Page 
     if (currentPage === "Admin") {
-      return <Admin currentPage={currentPage} handlePageChange={handlePageChange} />; 
+      return <Admin />;
     }
+    return <Home />;
   };
 
-  // Sets the States 
+  // Sets the States
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <>
+    <React.StrictMode>
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
 
+      {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
 
       <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
-    </>
+    </React.StrictMode>
   );
 };
 
