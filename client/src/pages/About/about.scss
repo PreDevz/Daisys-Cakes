@@ -3,9 +3,6 @@
 @import "../../sass/main.scss"; 
 
 #aboutPage, .page {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   background-image: url("../../imgs/svgs/about.svg");
 }
 
@@ -37,7 +34,7 @@
       margin-bottom: .9rem;
     
       span {
-        color: $accent-dark-clr;
+        color: $pink-clr;
       }
     }
   }

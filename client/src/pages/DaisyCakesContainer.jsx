@@ -8,7 +8,7 @@ import { Home, About, Contact, Admin } from "./index";
 
 const DaisyCakesContainer = () => {
 
-  const [currentPage, setCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("Home");
 
   // check which page the user is currently on 
   const renderPage = () => {
