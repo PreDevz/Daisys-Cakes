@@ -24,7 +24,7 @@ export const getSavedCakeIds = () => {
     }
   
     const updatedSavedCakeIds = savedCakeIds?.filter((savedCakeId) => savedCakeId !== cakeId);
-    localStorage.setItem('saved_books', JSON.stringify(updatedSavedCakeIds));
+    localStorage.setItem('saved_cakes', JSON.stringify(updatedSavedCakeIds));
   
     return true;
   };
