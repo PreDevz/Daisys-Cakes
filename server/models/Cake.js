@@ -14,9 +14,7 @@ const cakeSchema = new Schema({
     type: String,
     required: true,
   },
-  cakeUrl: [String]
+  cakeUrl: String,
 })
 
-const Cake = model('Cake', cakeSchema);
-
-module.exports = Cake;
+module.exports = cakeSchema;
