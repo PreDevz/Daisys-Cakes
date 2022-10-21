@@ -33,6 +33,28 @@ const resolvers = {
             const token = signToken(admin);
             return { token, admin };
         },
+        addedCake: async (parent, { input }, context) => {
+            if (context.cake) {
+                const updatedCake = await Cake.findOneAndUpdate(
+                    { _id: context.cake._id },
+                    { $addToSet: { savedCake: input } },
+                    { new: true, runValidators: true }
+                );
+                return updatedCake;
+            }
+            throw new AuthenticationError("You need to be logged in!");
+        },
+        removeCake: async (parent, { cakeId }, context) => {
+            if (context.user) {
+                const updatedUser = await Cake.findOneAndUpdate(
+                    { _id: context.user._id },
+                    { $pull: { savedCake: { cakeId: cakeId } } },
+                    { new: true }
+                );
+                return updatedCake;
+            }
+            throw new AuthenticationError("You need to be logged in!");
+        },
     },
 };
 
