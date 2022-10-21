@@ -16,6 +16,7 @@
   a {
     color: black;
     text-decoration: none;
+    z-index: 1;
   }
 }
 
@@ -43,10 +44,6 @@
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 300ms ease;
-
-  // &:hover {
-  //   color: #ff85c6;
-  // }
 
   &:hover,
   &:focus {
@@ -110,6 +107,9 @@
   .nav-menu.active {
     right: 0;
     padding-bottom: 5000vh;
-    margin-top: -1px;
+    height: 100%;
+    overflow-y: hidden;
+    padding-top: 2rem;
+    margin-top: -2rem;
   }
 }
