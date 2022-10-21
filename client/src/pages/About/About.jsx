@@ -8,7 +8,7 @@ const About = () => {
     <div id="aboutPage" className="page">
       <div className="container">
 
-        <h1>About Us!</h1>
+        <h1>About</h1>
         
         <div className="about-container">
 
@@ -25,7 +25,7 @@ const About = () => {
             </div>
 
             <div className="about-page-s1-right">
-              <img src="https://img.freepik.com/free-photo/cupcakes_74190-20.jpg?w=1380&t=st=1666295331~exp=1666295931~hmac=f4102f636a2440539a96c612eaa9b479c79dc718d521ba1d90baac95a242e95a" alt="" className="about-page-img" />
+              <img src="https://img.freepik.com/free-photo/cupcakes_74190-20.jpg?w=1380&t=st=1666295331~exp=1666295931~hmac=f4102f636a2440539a96c612eaa9b479c79dc718d521ba1d90baac95a242e95a" alt="" className="about-page-img" title="Hello"/>
             </div>
 
           </section>
