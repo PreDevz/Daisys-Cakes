@@ -21,6 +21,7 @@
 
 #logo {
   height: 75px;
+  margin: -5px;
 }
 
 .nav-menu {
@@ -32,10 +33,9 @@
 
 .nav-link {
   transition: 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #ff85c6;
+  &:hover {
+    color: #ff85c6;
+  }
 }
 
 .hamburger {
@@ -68,6 +68,10 @@
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar {
+    padding: 0 24px 0 4px;
   }
 
   .nav-menu {
