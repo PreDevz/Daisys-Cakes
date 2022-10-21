@@ -44,13 +44,14 @@
   background-repeat: no-repeat;
   transition: background-size 300ms ease;
 
-  &:hover {
-    color: #ff85c6;
-  }
+  // &:hover {
+  //   color: #ff85c6;
+  // }
 
   &:hover,
   &:focus {
     background-size: 0 0.1em, 100% 0.1em;
+    color: #ff85c6;
   }
 }
 
