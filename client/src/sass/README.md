@@ -11,7 +11,7 @@ And for each page sass file, will be in it's own folder along with it's js file.
 
 ## Imports
 
-To use styles from other files into another sass file, use `@use`
+To use styles from other files into another sass file, use `@use` or `@import`
 
 Ex: `@use 'sass/your_path.scss';`
 

@@ -1,0 +1,48 @@
+// About Page Styles 
+
+@import "../../sass/main.scss"; 
+
+#aboutPage, .page {
+  background-image: url("../../imgs/svgs/about.svg");
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  align-self: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-page-s {
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  width: 100%;
+  gap: 5%;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem;
+
+  .about-page-s1-left {
+    padding:.5rem;
+
+     div {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: .9rem;
+    
+      span {
+        color: $pink-clr;
+      }
+    }
+  }
+
+  .about-page-img {
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 16px rgb(198, 198, 198);
+    max-height: 300px;
+  }
+}

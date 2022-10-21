@@ -4,9 +4,25 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
+// Manuale 
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+// Normal Text 
+
+// @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+
 // Import Colors 
 
 @import "./variables/coreVars.scss";
+
+// Import Components 
+
+@import "./components/aboutComp.scss";
+@import "./components/featComp.scss";
+@import "./components/footerComp.scss";
+@import "./components/heroComp.scss";
+@import "./components/navbarComp.scss";
 
 /* Universal Resetter  */
 
@@ -21,7 +37,7 @@
 body {
 	font-family: "Open Sans", sans-serif;
 	width: 100%;
-	background-color: $dark-clr;
+	background-color: $mid-light-clr;
 }
 
 li {
@@ -30,4 +46,39 @@ li {
 
 a {
 	text-decoration: none;
+}
+
+// headers 
+
+h1 {
+	font-weight: bold;
+	font-size: 3.5rem;
+	color: $pink-clr;
+	border-bottom: 1px solid $pink-clr;
+	width: fit-content;
+	margin: 2rem auto;
+	font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+	font-size: 2.2rem;
+	color: $purp-clr;
+	font-family: 'Rubik', sans-serif;
+	margin-bottom: .8rem;
+}
+
+// Global Class Selectors 
+
+.page {
+	padding: 2.5rem 2rem;
+	min-height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1180px;
 }
