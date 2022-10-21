@@ -10,6 +10,10 @@ const cakeSchema = new Schema({
     type: String,
     required: true
   },
+  cakeId: {
+    type: String,
+    required: true,
+  },
   cakeUrl: [String]
 })
 
