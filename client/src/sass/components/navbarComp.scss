@@ -32,9 +32,25 @@
 }
 
 .nav-link {
-  transition: 0.3s ease;
+  /* Underline hover effects */
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 0),
+      rgba(100, 200, 200, 0)
+    ),
+    linear-gradient(to right, #ff85c6, #ff85c6);
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 300ms ease;
+
   &:hover {
     color: #ff85c6;
+  }
+
+  &:hover,
+  &:focus {
+    background-size: 0 0.1em, 100% 0.1em;
   }
 }
 
