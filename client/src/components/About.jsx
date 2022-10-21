@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section className="about-section">
       <h2>About</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, doloremque. A, quaerat quae in rerum repellat expedita corrupti deleniti aliquam, consectetur tempore atque! Velit cumque, commodi adipisci magnam hic voluptas.</p>
+      <p>Daisy&#39;s Cakes specializes in making custom cakes for all occasions. Take a look at our gallery for previous cakes. For any questions and inquires please fill out the inquire form below.  </p>
     </section>
   );
 };
