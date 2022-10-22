@@ -1,7 +1,9 @@
 /* Footer Component Styles  */
 
+@import "../variables/coreVars.scss"; 
+
 .footer-section  {
-	background-color: rgb(195, 195, 195);
+	background-color: rgb(220, 220, 220);
 	min-height: 30vh;
 	display: flex;
 	justify-content: center;
@@ -16,10 +18,9 @@
 		height: 100%;
 		width: 100%;
 
-
 		.footer-logo {
-			width: 40px;
-			height: 40px;
+			width: 55px;
+			height: 55px;
 		}
 
 		.footer-sec {
@@ -28,13 +29,22 @@
 			flex-direction: column;
 			gap: .8rem;
 			padding: .6rem;
-			font-size: 1.2rem;
+			font-size: 1.3rem;
+
+			h4 {
+				color: $purp-clr;
+			}
 
 			.footer-ul {
 				li {
 					a {
-						color: black;
-						font-size: 1rem;
+						color: $mid-dark-clr;
+						font-size: 1.1rem;
+
+						&:hover {
+							cursor: pointer;
+							color:rgb(236, 61, 255);
+						}
 					}
 				}
 			}
