@@ -1,8 +1,9 @@
-// About Page Styles 
+// About Page Styles
 
-@import "../../sass/main.scss"; 
+@import "../../sass/main.scss";
 
-#aboutPage, .page {
+#aboutPage,
+.page {
   background-image: url("../../imgs/svgs/about.svg");
 }
 
@@ -18,7 +19,7 @@
 .about-page-s {
   display: flex;
   flex-direction: row;
-  height: 40vh;
+  // height: 40vh;
   width: 100%;
   gap: 5%;
   justify-content: center;
@@ -26,13 +27,13 @@
   padding: 1rem;
 
   .about-page-s1-left {
-    padding:.5rem;
+    padding: 0.5rem;
 
-     div {
+    div {
       font-size: 1.3rem;
       font-weight: bold;
-      margin-bottom: .9rem;
-    
+      margin-bottom: 0.9rem;
+
       span {
         color: $pink-clr;
       }
@@ -44,5 +45,32 @@
     border-radius: 10px;
     box-shadow: 5px 5px 16px rgb(198, 198, 198);
     max-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+
+  .about-container {
+    padding: 1rem 0;
+  }
+
+  .about-page-s {
+    flex-direction: column;
+    margin-top: 0;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+        width: 300px;
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
