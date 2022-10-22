@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg from "../imgs/homePageCakes/hero-generic.png";
+import heroImg from "../imgs/homePageCakes/hero-2.png";
 
 // Styles
 import "../sass/components/heroComp.scss";

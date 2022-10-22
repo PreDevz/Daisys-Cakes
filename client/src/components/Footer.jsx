@@ -23,7 +23,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/daisycakes87/?next=%2Fdaisycakes87%2F">Instagram</a>
             </li>
             <li>
-              <a href="">herEmail@gmail.com</a>
+              <a href="">cakesbydaisysalcido@gmail.com</a>
             </li>
           </ul>
         </div>

@@ -3,7 +3,7 @@
 @import "../variables/coreVars.scss";
 
 .footer-section {
-  background-color: rgb(220, 220, 220);
+  background-color: #EFF8FF;
   min-height: 30vh;
   display: flex;
   justify-content: center;
@@ -12,7 +12,7 @@
   .container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 1rem;
     margin: auto;
     height: 100%;
@@ -43,7 +43,7 @@
 
             &:hover {
               cursor: pointer;
-              color: rgb(236, 61, 255);
+              color: #ff85c6;
             }
           }
         }

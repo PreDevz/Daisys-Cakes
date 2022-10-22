@@ -1,3 +1,23 @@
 /* About Component Styles  */
 
-.about-section {}
+.about-section {
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.about {
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+
+}
