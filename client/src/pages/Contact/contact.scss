@@ -22,7 +22,7 @@
   .popup {
     text-align: center;
     margin: 70px auto;
-    padding: 20px;
+    padding: .8rem 1rem;
     background: #fff;
     border-radius: 5px;
     width: 50%;
@@ -42,8 +42,11 @@
         }
 
         input {
+          border-radius: 5px;
           padding: .4rem;
           font-size: 1.03rem;
+          outline: none;
+          border: 1px solid $mid-dark-clr;
         }
 
         textarea {
@@ -52,11 +55,29 @@
           min-height: 6.5rem;
           resize: none;
           font-family: inherit;
+          outline: none;
+          border-radius: 5px;
+        }
+
+        .contact-send {
+          border-radius: 5px;
+          width: 50%;
+          margin: 1rem auto 0 auto;
+          background: $purp-clr;
+          color: $light-clr;
+          outline: none;
+          border: none;
+          padding: .5rem 0;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #c397ed;
+          }
         }
     }
   
     h2 {
-      margin-top: 0;
+      margin: .6rem;
     }
     
     .close {
