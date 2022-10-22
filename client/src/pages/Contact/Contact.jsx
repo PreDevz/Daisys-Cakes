@@ -44,6 +44,15 @@ const Contact = () => {
 
       return;
     }
+    
+    // (Temporarily here for testing)
+    setTimeout(() => {
+      // Cal Reset Form Function 
+      resetForm();
+
+      // Close the Form 
+      window.location.href = "#";
+    }, 900);
 
     emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
       (result) => {
@@ -52,6 +61,11 @@ const Contact = () => {
         swal({
           text: "Message was successfully sent!"
         });
+
+        // Call the Reset Function 
+        setTimeout(() => {
+          resetForm();
+        }, 900);
 
       },
       (error) => {
