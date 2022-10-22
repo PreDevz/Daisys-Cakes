@@ -1,53 +1,53 @@
 /* Footer Component Styles  */
 
-@import "../variables/coreVars.scss"; 
+@import "../variables/coreVars.scss";
 
-.footer-section  {
-	background-color: rgb(220, 220, 220);
-	min-height: 30vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.footer-section {
+  background-color: #EFF8FF;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-	.container {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		padding: 1rem;
-		margin: auto;
-		height: 100%;
-		width: 100%;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: auto;
+    height: 100%;
+    width: 100%;
 
-		.footer-logo {
-			width: 55px;
-			height: 55px;
-		}
+    .footer-logo {
+      width: 20%;
+      height: 20%;
+    }
 
-		.footer-sec {
-			margin: 0 auto;
-			display: flex;
-			flex-direction: column;
-			gap: .8rem;
-			padding: .6rem;
-			font-size: 1.3rem;
+    .footer-sec {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: .8rem;
+      padding: .6rem;
+      font-size: 1.3rem;
 
-			h4 {
-				color: $purp-clr;
-			}
+      h4 {
+        color: $purp-clr;
+      }
 
-			.footer-ul {
-				li {
-					a {
-						color: $mid-dark-clr;
-						font-size: 1.1rem;
+      .footer-ul {
+        li {
+          a {
+            color: $mid-dark-clr;
+            font-size: 1.1rem;
 
-						&:hover {
-							cursor: pointer;
-							color:rgb(236, 61, 255);
-						}
-					}
-				}
-			}
-		}
-	}
+            &:hover {
+              cursor: pointer;
+              color: #ff85c6;
+            }
+          }
+        }
+      }
+    }
+  }
 }
