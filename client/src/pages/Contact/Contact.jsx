@@ -54,11 +54,11 @@ const Contact = () => {
         <div className="content">
           <form ref={form} onSubmit={sendEmail}>
             <label>Name</label>
-            <input type="text" name="user_name" />
+            <input type="text" name="user_name" placeholder="John Doe" />
             <label>Email</label>
-            <input type="email" name="user_email" />
+            <input type="email" name="user_email" placeholder="john@gmail.com" />
             <label>Message</label>
-            <textarea name="message" />
+            <textarea name="message" maxLength="750" placeholder="Add your message..." />
             <input className="contact-send" type="submit" value="Send" />
           </form>
         </div>

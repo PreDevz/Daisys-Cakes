@@ -32,7 +32,7 @@
     form {
         display: flex;
         flex-direction: column;
-        padding: 1rem 0;
+        padding: 1rem .3rem;
         font-size: 1.03rem;
 
         label {
@@ -46,7 +46,7 @@
           padding: .4rem;
           font-size: 1.03rem;
           outline: none;
-          border: 1px solid $mid-dark-clr;
+          border: 1px solid rgb(188, 188, 188);
         }
 
         textarea {
@@ -57,6 +57,7 @@
           font-family: inherit;
           outline: none;
           border-radius: 5px;
+          border: 1px solid rgb(188, 188, 188);
         }
 
         .contact-send {
@@ -82,8 +83,8 @@
     
     .close {
       position: absolute;
-      top: 0px;
-      right: 10px;
+      top: 4px;
+      right: 15px;
       transition: all 200ms;
       font-size: 30px;
       font-weight: bold;
