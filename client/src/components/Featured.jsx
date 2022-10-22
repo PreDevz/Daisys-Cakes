@@ -10,7 +10,7 @@ const Featured = () => {
   return (
     <section className="featured-section">
       <h2>Featured</h2>
-      <h3>October&#39;s Featured Cakes!</h3>
+      <h3>Featured Cakes of the Month: October</h3>
 
       <div className="featured-page-1">
         <img className="featured-img" src={cuteGhost} />
