@@ -47,7 +47,8 @@ const Contact = () => {
 
   return (
     // need to move this anchor to navbar contact
-    <><a href="#popup1">Contact</a><div id="popup1" className="popup-overlay">
+    <><a href="#popup1">Contact</a>
+    <div id="popup1" className="popup-overlay">
       <div className="popup">
         <h2>Contact Us!</h2>
         <a className="close" href="#">&times;</a>
