@@ -28,7 +28,7 @@ const Contact = () => {
 
     // Checks if message is empty
     if (form.current[2].value === "") {
-      Swal.fire("Please give us a text message!");
+      Swal.fire("Message can't be left blank.");
       return;
     }
 
