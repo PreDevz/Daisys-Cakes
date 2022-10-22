@@ -1,29 +1,41 @@
 /* Footer Component Styles  */
 
-.footer-section {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	max-height: 40vh;
+.footer-section  {
 	background-color: rgb(195, 195, 195);
-	padding: 1rem;
+	min-height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-	.footer-logo {
-		width: 40px;
-		height: 40px;
-	}
-
-	.footer-sec {
-		margin: 0 auto;
+	.container {
 		display: flex;
-		flex-direction: column;
-		gap: .8rem;
-		padding: .6rem;
+		flex-direction: row;
+		justify-content: center;
+		padding: 1rem;
+		margin: auto;
+		height: 100%;
+		width: 100%;
 
-		.footer-ul {
-			li {
-				a {
-					color: black;
+
+		.footer-logo {
+			width: 40px;
+			height: 40px;
+		}
+
+		.footer-sec {
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			gap: .8rem;
+			padding: .6rem;
+			font-size: 1.2rem;
+
+			.footer-ul {
+				li {
+					a {
+						color: black;
+						font-size: 1rem;
+					}
 				}
 			}
 		}
