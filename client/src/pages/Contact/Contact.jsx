@@ -1,8 +1,11 @@
 import React, { useRef } from "react";
-import Swal from "sweetalert";
 import emailjs from "@emailjs/browser";
+
 // Styles 
 import "./contact.scss";
+
+// Sweet Alert 
+import swal from "sweetalert";
 
 // need client create account with emailjs
 const serviceId = "";
@@ -16,19 +19,28 @@ const Contact = () => {
 
     // Checks if name is empty
     if (form.current[0].value === "") {
-      Swal.fire("Please enter your name!");
+      swal({
+        text: "Please add your name!"
+      });
+
       return;
     }
 
     // Checks if email is empty
     if (form.current[1].value === "") {
-      Swal.fire("Please enter your email address!");
+      swal({
+        text: "Please add your email!"
+      });
+
       return;
     }
 
     // Checks if message is empty
     if (form.current[2].value === "") {
-      Swal.fire("Please give us a text message!");
+      swal({
+        text:  "Please give us a message!"
+      });
+
       return;
     }
 
@@ -36,34 +48,47 @@ const Contact = () => {
       (result) => {
         console.log(result.text);
         console.log("Sent!");
-        Swal.fire("Success!", "Message was successfully sent!", "success");
+        swal({
+          text: "Message was successfully sent!"
+        });
+
       },
       (error) => {
         console.log(error.text);
-        Swal.fire("Uh oh!", "An unexpected error occurred.", "error");
+        swal({
+         text: "Uh oh!, An unexpected error occurred."
+        });
       }
     );
   };
 
   return (
     // need to move this anchor to navbar contact
-    <><a href="#popup1">Contact</a><div id="popup1" className="popup-overlay">
-      <div className="popup">
-        <h2>Contact Us!</h2>
-        <a className="close" href="#">&times;</a>
-        <div className="content">
-          <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" placeholder="John Doe" />
-            <label>Email</label>
-            <input type="email" name="user_email" placeholder="john@gmail.com" />
-            <label>Message</label>
-            <textarea name="message" maxLength="750" placeholder="Add your message..." />
-            <input className="contact-send" type="submit" value="Send" />
-          </form>
+    <>
+      <a href="#popup1">Contact</a>
+      <div id="popup1" className="popup-overlay">
+        <div className="popup">
+          <h2>Contact Us!</h2>
+          <a className="close" href="#">&times;</a>
+          <div className="content">
+            {/* Contact Form  */}
+            <form ref={form} onSubmit={sendEmail}>
+              {/* Form Name */}
+              <label>Name</label>
+              <input type="text" name="user_name" placeholder="John Doe" />
+              {/* Form Email */}
+              <label>Email</label>
+              <input type="email" name="user_email" placeholder="john@gmail.com" />
+              {/* Form Message */}
+              <label>Message</label>
+              <textarea name="message" maxLength="750" placeholder="Add your message..." />
+              {/* Form Send Button */}
+              <input className="contact-send" type="submit" value="Send" />
+            </form>
+          </div>
         </div>
       </div>
-    </div></>
+    </>
   );
 };
 

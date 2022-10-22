@@ -27,7 +27,7 @@
     border-radius: 5px;
     width: 50%;
     position: relative;
-    transition: all 5s ease-in-out;
+    transition: all 1.2s ease-in-out;
     
     form {
         display: flex;
@@ -64,7 +64,7 @@
           border-radius: 5px;
           width: 50%;
           margin: 1rem auto 0 auto;
-          background: $purp-clr;
+          background: $pink-clr;
           color: $light-clr;
           outline: none;
           border: none;
@@ -79,6 +79,7 @@
   
     h2 {
       margin: .6rem;
+      color: $pink-clr;
     }
     
     .close {
