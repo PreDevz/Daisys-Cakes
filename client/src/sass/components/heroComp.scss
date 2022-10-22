@@ -1,3 +1,14 @@
 /* Hero Component Styles  */
 
-.hero-section {}
+.hero-section {
+	width: 100%;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	justify-self: center;
+}
+
+.hero-img {
+	display: flex;
+	align-items: center;
+}
