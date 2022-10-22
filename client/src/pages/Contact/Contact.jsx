@@ -14,6 +14,7 @@ const publicKey = "";
 
 const Contact = () => {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -38,7 +39,7 @@ const Contact = () => {
     // Checks if message is empty
     if (form.current[2].value === "") {
       swal({
-        text:  "Please give us a message!"
+        text: "Please give us a message!"
       });
 
       return;
@@ -61,6 +62,18 @@ const Contact = () => {
       }
     );
   };
+
+  // Function to reset form 
+  function resetForm() {
+    // reset name value 
+    form.current[0].value = "";
+
+    // reset email value 
+    form.current[1].value = "";
+
+    // reset Message value 
+    form.current[2].value = "";
+  }
 
   return (
     // need to move this anchor to navbar contact
