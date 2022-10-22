@@ -1,9 +1,46 @@
 /* Featured Component Styles  */
 
-.featured-section {}
+.featured-section {
+    padding: 100px;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
 
 .featured-img {
     display: inline-flex;
     height: 400px;
     width: 400px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 3.9rem;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    margin-bottom: 40px;
+    text-align: center;
+    z-index: 1;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+.featured-page-1 {
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
 }
