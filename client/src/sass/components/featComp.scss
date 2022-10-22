@@ -1,5 +1,50 @@
 /* Featured Component Styles  */
 
 .featured-section {
-	background-color: lightblue;
+    padding: 100px;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.featured-img {
+    display: inline-flex;
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 25px;
+
+}
+
+h2 {
+    font-size: 3.9rem;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    margin-bottom: 40px;
+    text-align: center;
+    z-index: 1;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+.featured-page-1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
 }

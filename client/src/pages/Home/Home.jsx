@@ -8,11 +8,11 @@ import "./home.scss";
 
 const Home = () => {
   return (
-    <>
+    <div id="homePage" className="page">
       <Hero />
       <Featured />
       <About />
-    </>
+    </div>
   );
 };
 
