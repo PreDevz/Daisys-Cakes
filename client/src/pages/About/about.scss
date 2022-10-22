@@ -19,7 +19,6 @@
 .about-page-s {
   display: flex;
   flex-direction: row;
-  // height: 40vh;
   width: 100%;
   gap: 5%;
   justify-content: center;
@@ -48,7 +47,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   h2 {
     text-align: center;
   }
@@ -66,10 +65,31 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      margin-bottom: 1rem;
 
       img {
-        width: 300px;
+        width: 500px;
         margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page-s {
+    div {
+      img {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .about-page-s {
+    div {
+      img {
+        width: 250px;
       }
     }
   }
