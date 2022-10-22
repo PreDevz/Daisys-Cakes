@@ -46,13 +46,7 @@ const Contact = () => {
     }
     
     // (Temporarily here for testing)
-    setTimeout(() => {
-      // Cal Reset Form Function 
-      resetForm();
-
-      // Close the Form 
-      window.location.href = "#";
-    }, 900);
+    resetForm();
 
     emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
       (result) => {
@@ -63,9 +57,7 @@ const Contact = () => {
         });
 
         // Call the Reset Function 
-        setTimeout(() => {
-          resetForm();
-        }, 900);
+        resetForm();
 
       },
       (error) => {
@@ -79,14 +71,21 @@ const Contact = () => {
 
   // Function to reset form 
   function resetForm() {
-    // reset name value 
-    form.current[0].value = "";
 
-    // reset email value 
-    form.current[1].value = "";
+    // after 900ms reset form 
+    setTimeout(() => {
+      // reset name value 
+      form.current[0].value = "";
 
-    // reset Message value 
-    form.current[2].value = "";
+      // reset email value 
+      form.current[1].value = "";
+
+      // reset Message value 
+      form.current[2].value = "";
+
+      // Close the Form 
+      window.location.href = "#";
+    }, 900);
   }
 
   return (
