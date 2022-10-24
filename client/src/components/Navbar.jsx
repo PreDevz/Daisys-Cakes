@@ -22,12 +22,12 @@ function Navbar() {
       <ul className={`nav-menu ${isActive ? "" : "active"}`}>
         <li className="nav-item">
           <Link onClick={handleToggle} to="/" className="nav-link">
-            HOME
+            Home
           </Link>
         </li>
         <li className="nav-item">
           <Link onClick={handleToggle} to="/about" className="nav-link">
-            ABOUT
+            About
           </Link>
         </li>
         <li className="nav-item">
@@ -38,17 +38,17 @@ function Navbar() {
             rel="noreferrer"
             className="nav-link"
           >
-            INSTAGRAM
+            Instagram
           </a>
         </li>
         <li className="nav-item">
           <Link onClick={handleToggle} to="/contact" className="nav-link">
-            CONTACT
+            Contact
           </Link>
         </li>
         <li className="nav-item">
           <Link onClick={handleToggle} to="/login" className="nav-link">
-            LOG IN
+            Log In
           </Link>
         </li>
       </ul>
