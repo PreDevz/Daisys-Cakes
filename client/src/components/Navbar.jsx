@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 // Styles
 import "../sass/components/navbarComp.scss";
-import Logo from "../assets/daisylogo.png";
+import Logo from "../imgs/homePageCakes/text-logo-cake-clear.png";
 
 function Navbar() {
   // State for whether the hamburger menu is active
@@ -13,20 +15,20 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <a href="#" className="nav-branding">
+      <Link to="/" className="nav-branding">
         <img id="logo" src={Logo} alt="Daisy's Cakes Logo" />
-      </a>
+      </Link>
 
       <ul className={`nav-menu ${isActive ? "" : "active"}`}>
         <li className="nav-item">
-          <a onClick={handleToggle} href="#" className="nav-link">
+          <Link onClick={handleToggle} to="/" className="nav-link">
             HOME
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a onClick={handleToggle} href="#" className="nav-link">
+          <Link onClick={handleToggle} to="/about" className="nav-link">
             ABOUT
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
           <a
@@ -40,14 +42,14 @@ function Navbar() {
           </a>
         </li>
         <li className="nav-item">
-          <a onClick={handleToggle} href="#" className="nav-link">
+          <Link onClick={handleToggle} to="/contact" className="nav-link">
             CONTACT
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a onClick={handleToggle} href="#" className="nav-link">
+          <Link onClick={handleToggle} to="/admin" className="nav-link">
             LOG IN
-          </a>
+          </Link>
         </li>
       </ul>
 

@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-  background-color: #f5f5f5;
+  background-color: #eff8ff;
 
   li {
     list-style: none;
@@ -16,6 +16,7 @@
   a {
     color: black;
     text-decoration: none;
+    z-index: 1;
   }
 }
 
@@ -33,24 +34,19 @@
 
 .nav-link {
   /* Underline hover effects */
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgba(100, 200, 200, 0),
-      rgba(100, 200, 200, 0)
-    ),
+      rgba(100, 200, 200, 0)),
     linear-gradient(to right, #ff85c6, #ff85c6);
   background-size: 100% 0.1em, 0 0.1em;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 300ms ease;
 
-  &:hover {
-    color: #ff85c6;
-  }
-
   &:hover,
   &:focus {
     background-size: 0 0.1em, 100% 0.1em;
+    color: #ff85c6;
   }
 }
 
@@ -96,7 +92,7 @@
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: #f5f5f5;
+    background-color: #eff8ff;
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -109,6 +105,9 @@
   .nav-menu.active {
     right: 0;
     padding-bottom: 5000vh;
-    margin-top: -1px;
+    height: 100%;
+    overflow-y: hidden;
+    padding-top: 2rem;
+    margin-top: -2rem;
   }
 }
