@@ -1,14 +1,14 @@
 import React from "react";
 import footerImg from "../imgs/homePageCakes/text-logo.png";
+import { Link } from "react-router-dom";
 
-// Styles 
+// Styles
 import "../sass/components/footerComp.scss";
 
 const Footer = () => {
   return (
     <footer className="footer-section">
       <div className="container">
-
         {/* Logo  */}
         <img className="footer-logo" src={footerImg} alt="" />
 
@@ -20,7 +20,9 @@ const Footer = () => {
               <a href="">Learn More</a>
             </li>
             <li>
-              <a href="https://www.instagram.com/daisycakes87/?next=%2Fdaisycakes87%2F">Instagram</a>
+              <a href="https://www.instagram.com/daisycakes87/?next=%2Fdaisycakes87%2F">
+                Instagram
+              </a>
             </li>
             <li>
               <a href="">cakesbydaisysalcido@gmail.com</a>
@@ -33,17 +35,16 @@ const Footer = () => {
           <h4>Page</h4>
           <ul className="footer-ul">
             <li>
-              <a href="">Featured</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
-
       </div>
     </footer>
   );
