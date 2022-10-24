@@ -22,7 +22,7 @@
 
 #logo {
   height: 75px;
-  margin: -5px;
+  margin: 0;
 }
 
 .nav-menu {
@@ -34,9 +34,11 @@
 
 .nav-link {
   /* Underline hover effects */
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgba(100, 200, 200, 0),
-      rgba(100, 200, 200, 0)),
+      rgba(100, 200, 200, 0)
+    ),
     linear-gradient(to right, #ff85c6, #ff85c6);
   background-size: 100% 0.1em, 0 0.1em;
   background-position: 100% 100%, 0 100%;
