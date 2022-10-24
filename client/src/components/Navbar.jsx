@@ -47,7 +47,7 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav-item">
-          <Link onClick={handleToggle} to="/admin" className="nav-link">
+          <Link onClick={handleToggle} to="/login" className="nav-link">
             Log In
           </Link>
         </li>
