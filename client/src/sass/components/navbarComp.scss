@@ -86,6 +86,9 @@
 
   .navbar {
     padding: 0 24px 0 4px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
 
   .nav-menu {

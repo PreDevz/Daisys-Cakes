@@ -92,3 +92,9 @@ h2 {
   margin: 0 auto;
   max-width: 1180px;
 }
+
+@media (max-width: 786px) {
+  main {
+    margin-top: 80px;
+  }
+}
