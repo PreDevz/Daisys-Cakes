@@ -3,7 +3,7 @@
 @import "../variables/coreVars.scss";
 
 .footer-section {
-  background-color: #EFF8FF;
+  background-color: #eff8ff;
   min-height: 30vh;
   display: flex;
   justify-content: center;
@@ -27,8 +27,8 @@
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: .8rem;
-      padding: .6rem;
+      gap: 0.8rem;
+      padding: 0.6rem;
       font-size: 1.3rem;
 
       h4 {
@@ -46,6 +46,29 @@
               color: #ff85c6;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 765px) {
+  .footer-section {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      .footer-logo {
+        width: 55vw;
+      }
+      .footer-sec {
+        align-items: center;
+        justify-content: center;
+        .footer-ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
       }
     }
