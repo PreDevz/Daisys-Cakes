@@ -1,5 +1,5 @@
 /* Importing the React library from the node_modules folder. */
-import React from "react";
+import React, { useState } from "react";
 
 /* Importing the login.scss file. */
 import "./login.scss";
@@ -19,14 +19,12 @@ import Auth from "../../utils/auth";
 /* Importing the motion library from framer-motion. */
 import { motion } from "framer-motion";
 
-import { Loginform } from "../../components/Loginform";
-
 const Login = (props) => {
   /* We're using the useState hook to keep track of the form state. */
   const [formState, setFormState] = useState({ email: "", password: "" });
 
   /* We're using the useMutation hook to make a mutation request to our GraphQL API. */
-  const [login, { error, data }] = useMutation(LOGIN_USER);
+  // const [login, { error, data }] = useMutation(LOGIN_USER);
 
   /* We're using the handleChange function to update the form state based on the input changes.  */
   const handleChange = (event) => {
@@ -38,41 +36,37 @@ const Login = (props) => {
       [name]: value,
     });
   };
-};
+  /* We're using the handleFormSubmit function to submit the form. */
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    console.log(formState);
+    try {
+      const { data } = await login({
+        variables: { ...formState },
+      });
+      /* We're using the Auth.login function to store the token in the local storage.  */
+      Auth.login(data.login.token);
+    } catch (e) {
+      console.error(e);
+    }
 
-/* We're using the handleFormSubmit function to submit the form. */
-const handleFormSubmit = async (event) => {
-  event.preventDefault();
-  console.log(formState);
-  try {
-    const { data } = await login({
-      variables: { ...formState },
+    /* We're using the setFormState function to clear the form state. */
+    setFormState({
+      email: "",
+      password: "",
     });
-    /* We're using the Auth.login function to store the token in the local storage.  */
-    Auth.login(data.login.token);
-  } catch (e) {
-    console.error(e);
-  }
+  };
 
-  /* We're using the setFormState function to clear the form state. */
-  setFormState({
-    email: "",
-    password: "",
-  });
-};
-
-const Loginpage = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.23 }}
       exit={{ opacity: 0 }}
-      id="adminPage"
     >
-      <Loginform />
+      hello
     </motion.div>
   );
 };
 
-export default Loginpage;
+export default Login;
