@@ -1,5 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import brownCake from "../../imgs/contact/brown-floral.jpg";
+import lavenderCake from "../../imgs/contact/lavender-butterflies.jpg";
+import greenCake from "../../imgs/contact/green-with-rose.jpg";
 
 // Styles 
 import "./contact.scss";
@@ -103,9 +106,9 @@ const Contact = () => {
       <div className="contact-content">
         <p>Thank you for your interest in Daisy&#39;s Cakes! Where every cake is guarenteed to be made with love. Please click on the inquire form below and we&#39;ll get back to you as soon we can!</p>
         <div className="contact-img-container">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src={lavenderCake} alt="lavender cake" />
+          <img src={brownCake} alt="brown cake" />
+          <img src={greenCake} alt="green cake" />
         </div>
       </div>
 
