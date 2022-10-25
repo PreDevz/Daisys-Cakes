@@ -74,16 +74,37 @@
         flex-direction: column;
         margin: 0 .3rem;
         width: 45%;
-        max-height: auto; 
+        height: 300px; 
 
         .featured-img {
-          align-self: flex-start;
           width: 100%; 
-          height: 85%; 
+          height: 100%; 
         }
 
         p {
           padding: .2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .featured-section {
+    .featured-page-1 {
+      // justify-content: start; 
+      align-items: flex-start;
+      div {
+        width: 45%;
+        height: auto;
+        // min-height: 150px; 
+        // max-height: 175px;
+
+        .featured-img {
+          margin-bottom: .5rem;
+          border-radius: 8px;
+          width: 100%;
+          height: 100%;
         }
       }
     }
