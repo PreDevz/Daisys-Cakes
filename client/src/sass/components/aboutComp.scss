@@ -55,12 +55,13 @@
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
-    gap: 1%; 
+    gap: 0%; 
+    padding: 1rem !important;
 
     .about-img {
-      height: 300px;
-      width: 300px;
-      margin-bottom: 1.5rem;
+      height: auto !important;
+      width: 75% !important;
+      margin-bottom: 1.2rem;
       border-radius: 1.56rem;
     }
 
