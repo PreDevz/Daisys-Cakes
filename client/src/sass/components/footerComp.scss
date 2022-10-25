@@ -3,7 +3,7 @@
 @import "../variables/coreVars.scss";
 
 .footer-section {
-  background-color: #eff8ff;
+  background-color: $mid-light-clr;
   min-height: 30vh;
   display: flex;
   justify-content: center;
@@ -43,7 +43,7 @@
 
             &:hover {
               cursor: pointer;
-              color: #ff85c6;
+              color: $pink-clr;
             }
           }
         }
