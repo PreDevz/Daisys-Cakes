@@ -50,27 +50,32 @@
 // Mobile Screens 
 
 @media screen and (max-width: 825px) {
-  .image-wrapper {
-    display: flex;
-    flex-direction: column !important;
-    justify-content: center;
-    align-items: center;
-    gap: 0%; 
-    padding: 1rem !important;
 
-    .about-img {
-      height: auto !important;
-      width: 75% !important;
-      margin-bottom: 1.2rem;
-      border-radius: 1.56rem;
-    }
+  .about-section {
+    padding: 0;
+    .image-wrapper {
+      display: flex;
+      flex-direction: column !important;
+      justify-content: center;
+      align-items: center;
+      gap: 0%; 
+      padding: .8rem !important;
 
-    p {
-      text-align: center;
-      font-size: 1.1rem !important;
+      .about-img {
+        height: auto !important;
+        width: 75% !important;
+        margin-bottom: 1.2rem;
+        border-radius: 1.56rem;
+      }
 
-      .about-btn-container {
-        text-align: center !important;
+      p {
+        padding: .1rem;
+        text-align: center;
+        font-size: 1.1rem !important;
+
+        .about-btn-container {
+          text-align: center !important;
+        }
       }
     }
   }

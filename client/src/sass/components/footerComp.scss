@@ -57,18 +57,28 @@
     .container {
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
+      gap: .8rem;
+      padding: 2rem 0;
+
       .footer-logo {
         width: 55vw;
       }
+
       .footer-sec {
         align-items: center;
         justify-content: center;
+        padding: 0;
+
         .footer-ul {
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
+
+          a {
+            font-size: 1rem !important;
+            word-wrap: break-word; 
+          }
         }
       }
     }
