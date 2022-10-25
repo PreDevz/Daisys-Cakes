@@ -1,4 +1,6 @@
 import React from "react";
+
+// Images 
 import aboutImg from "../imgs/homePageCakes/cupcakes.jpg";
 
 // Styles
