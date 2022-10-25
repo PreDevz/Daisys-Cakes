@@ -16,10 +16,13 @@ const About = () => {
             <p>
               Daisy&#39;s Cakes specializes in making custom cakes for all
               occasions. Take a look at our gallery on instagram for more! For any
-              questions and inquires please fill out the inquire form below.
-            </p>
+            questions and inquires please fill out the inquire form below.
+            <br />
+            <br />
+          <a href="#" className="about-btn">Learn More</a>
+          </p>
         </div>
-        
+
       </div>
     </section>
   );

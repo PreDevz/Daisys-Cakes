@@ -1,5 +1,8 @@
 /* About Component Styles  */
 
+// SCSS Variables 
+@import "../variables/coreVars.scss";
+
 .about-section {
   margin: 1rem 0;
   padding: .5rem;
@@ -17,6 +20,14 @@
 
     p {
       font-size: 1.2rem;
+
+      .about-btn {
+        margin: 0 auto;
+        padding: .65rem .85rem;
+        background-color: $pink-clr;
+        border-radius: 8px;
+        color: #fff;
+      }
     }
   }
 }
