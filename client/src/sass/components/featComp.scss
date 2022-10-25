@@ -1,5 +1,7 @@
 /* Featured Component Styles  */
 
+@import "../variables/coreVars.scss";
+
 .featured-section {
   width: 100%;
   overflow: hidden;
@@ -41,7 +43,15 @@
         width: 320px; 
         height: 320px;
         border-radius: .8rem;
-        transition: transform 0.25s ease;
+        transition: transform 325ms ease-out;
+
+        // Image hover effect 
+        &:hover {
+          filter: contrast(105%);
+          cursor: pointer;
+          transform: translate(-3px, -4px);
+          border: 1px solid $pink-clr;
+        }
       }
 
       p {
@@ -50,12 +60,6 @@
         text-align: center;
         justify-content: center;
       }
-
-        /* Making the image bigger when you hover over it. */
-        // &:hover {
-        //   -webkit-transform: scale(1.5); /* or some other value */
-        //   transform: scale(1.5);
-        //   box-shadow: 0 0 0;
     }
   }
 }
@@ -91,7 +95,7 @@
   }
 }
 
-// Mobile 
+// Mobile Screens
 
 @media screen and (max-width: 825px) {
   .featured-section {
