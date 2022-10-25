@@ -98,16 +98,20 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.23 }}
-      exit={{ opacity: 0 }}>
+      exit={{ opacity: 0 }}
+      className="page" >
       <div className="contact-content">
-        <p></p>
+        <p>Thank you for your interest in Daisy&#39;s Cakes! Where every cake is guarenteed to be made with love. Please click on the inquire form below and we&#39;ll get back to you as soon we can!</p>
         <div className="contact-img-container">
           <img src="" alt="" />
           <img src="" alt="" />
           <img src="" alt="" />
         </div>
       </div>
-      <a href="#popup1">Contact Us</a>
+
+      <div className="inquire-button-container">
+        <a href="#popup1" id="inquireBtn">Inquire Form</a>
+      </div>
       <div id="popup1" className="popup-overlay">
         <div className="popup">
           <h2>Contact Us!</h2>

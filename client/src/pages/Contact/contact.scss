@@ -18,18 +18,18 @@
 		opacity: 1;
 	}
 }
-  
+
 .popup {
-  text-align: center;
-  margin: 70px auto;
-  padding: .8rem 1rem;
-  background: #fff;
-  border-radius: 5px;
-  width: 50%;
-  position: relative;
-  transition: all 1.2s ease-in-out;
-  
-  form {
+	text-align: center;
+	margin: 70px auto;
+	padding: .8rem 1rem;
+	background: #fff;
+	border-radius: 5px;
+	width: 50%;
+	position: relative;
+	transition: all 1.2s ease-in-out;
+
+	form {
 		display: flex;
 		flex-direction: column;
 		padding: 1rem .3rem;
@@ -75,31 +75,50 @@
 				background-color: #c397ed;
 			}
 		}
-  }
+	}
 
-  h2 {
-    margin: .6rem;
-    color: $pink-clr;
-  }
-  
-  .close {
-    position: absolute;
-    top: 4px;
-    right: 15px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: $dark-clr;
-    
-    &:hover {
-      cursor: pointer;
-      color: $pink-clr;
-    }
-  }
-  
-  .content {
-    max-height: 30%;
-    overflow: auto;
-  }
+	h2 {
+		margin: .6rem;
+		color: $pink-clr;
+	}
+
+	.close {
+		position: absolute;
+		top: 4px;
+		right: 15px;
+		transition: all 200ms;
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		color: $dark-clr;
+
+		&:hover {
+			cursor: pointer;
+			color: $pink-clr;
+		}
+	}
+
+	.content {
+		max-height: 30%;
+		overflow: auto;
+	}
+}
+
+.inquire-button-container {
+	width: 100%;
+	display: flex;
+}
+
+#inquireBtn {
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+	background-color: $pink-clr;
+	padding: .8rem;
+	border-radius: 8px;
+	color: #fff;
+
+	&:hover {
+		background-color: #eda5d5;
+	}
 }
