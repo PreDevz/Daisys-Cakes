@@ -19,14 +19,26 @@
     }
 
     p {
+      padding: 1.2rem;
       font-size: 1.2rem;
 
-      .about-btn {
-        margin: 0 auto;
-        padding: .65rem .85rem;
-        background-color: $pink-clr;
-        border-radius: 8px;
-        color: #fff;
+      .about-btn-container {
+        width: 100%;
+        text-align: start;
+        margin: 1rem auto;
+
+        .about-btn {
+          padding: .65rem .85rem;
+          background-color: $pink-clr;
+          border-radius: 8px;
+          color: #fff;
+          transition: all 200ms ease;
+
+          &:hover {
+            cursor: pointer;
+            background-color: rgb(255, 97, 229);
+          }
+        }
       }
     }
   }
@@ -54,6 +66,10 @@
     p {
       text-align: center;
       font-size: 1.1rem !important;
+
+      .about-btn-container {
+        text-align: center !important;
+      }
     }
   }
 }

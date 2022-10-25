@@ -19,7 +19,9 @@ const About = () => {
             questions and inquires please fill out the inquire form below.
             <br />
             <br />
-          <a href="#" className="about-btn">Learn More</a>
+            <div className="about-btn-container">
+              <a href="#" className="about-btn">Learn More</a>
+            </div>
           </p>
         </div>
 
