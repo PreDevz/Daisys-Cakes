@@ -1,11 +1,8 @@
 /* About Component Styles  */
 
 .about-section {
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  flex-direction: column;
-  display: flex;
+  margin: 1rem 0;
+  padding: .5rem;
 
   .image-wrapper {
     display: flex;
@@ -13,18 +10,20 @@
     justify-content: space-between;
     gap: 1rem;
     max-width: 1200px;
+
+    .about-img {
+      display: flex;
+      height: 300px;
+      width: 300px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+    }
   }
 }
 
-.about-img {
-  display: flex;
-  height: 300px;
-  width: 300px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-}
+// Media Queries 
 
 @media (max-width: 768px) {
   .image-wrapper {
