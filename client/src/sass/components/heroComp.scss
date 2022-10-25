@@ -3,15 +3,14 @@
 .hero-section {
   display: flex;
   width: 100%;
-  overflow: hidden;
+  max-height: 88vh;
   justify-content: center;
-  align-items: center;
-  justify-self: center;
-  max-height: auto;
 }
 
-.hero-img {
-  width: 90vw;
+.hero-img { 
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;

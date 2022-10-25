@@ -1,7 +1,6 @@
 @import "../../sass/main.scss";
 
-#homePage,
-.page {
-    background-image: url("../../imgs/svgs/about.svg");
-    padding: 1rem;
+#homePage {
+    display: flex;
+    flex-direction: column; 
 }
