@@ -47,7 +47,7 @@ const Contact = () => {
 
       return;
     }
-    
+
     // (Temporarily here for testing)
     resetForm();
 
@@ -66,7 +66,7 @@ const Contact = () => {
       (error) => {
         console.log(error.text);
         swal({
-         text: "Uh oh!, An unexpected error occurred."
+          text: "Uh oh!, An unexpected error occurred."
         });
       }
     );
@@ -92,13 +92,22 @@ const Contact = () => {
   }
 
   return (
+
     // need to move this anchor to navbar contact
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.23 }}
       exit={{ opacity: 0 }}>
-      <a href="#popup1">Contact</a>
+      <div className="contact-content">
+        <p></p>
+        <div className="contact-img-container">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </div>
+      <a href="#popup1">Contact Us</a>
       <div id="popup1" className="popup-overlay">
         <div className="popup">
           <h2>Contact Us!</h2>
