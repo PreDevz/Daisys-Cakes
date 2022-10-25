@@ -7,7 +7,9 @@ import "../sass/components/heroComp.scss";
 const Hero = () => {
   return (
     <div className="hero-section">
+
       <img className="hero-img" src={heroImg} />
+      
     </div>
   );
 };
