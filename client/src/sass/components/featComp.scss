@@ -1,13 +1,11 @@
 /* Featured Component Styles  */
 
 .featured-section {
-  padding: 100px;
   width: 100%;
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  justify-self: center;
-  padding: 1rem;
+  padding: 1rem 0;
 
   h2 {
     letter-spacing: 0.03em;
@@ -33,26 +31,30 @@
     margin: 1rem 0;
 
     div {
-      margin: 0 auto;
-      width: 33%;
-      max-height: 340px; 
+      margin: 0 .5rem;
+      width: 40%;
+      height: 100%;
+      max-height: 360px; 
       text-align: center;
 
       .featured-img {
-        display: inline-flex;
-        // height: 100%; 
-        width: 100%;
-        max-width: 385px;
-        max-height: 385px;
-        padding: 1rem; 
+        // display: inline-flex; 
+        width: 320px; 
+        height: 320px;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: row;
-        border-radius: 25px;
+        border-radius: 1rem;
         transition: transform 0.25s ease;
       }
 
-/* Making the image bigger when you hover over it. */
+      p {
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+      }
+
+        /* Making the image bigger when you hover over it. */
         // &:hover {
         //   -webkit-transform: scale(1.5); /* or some other value */
         //   transform: scale(1.5);
@@ -61,39 +63,29 @@
   }
 }
 
-p {
-  font-size: 15px;
-  text-align: center;
-  justify-content: center;
-}
+// Media Queries
 
-/* Ipad Air */
-@media (max-width: 850px) {
+@media screen and (max-width: 1050px) {
   .featured-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    .featured-page-1 {
+      min-height: auto;
+      div {
+        display: flex;
+        flex-direction: column;
+        margin: 0 .3rem;
+        width: 45%;
+        max-height: auto; 
 
-    // .featured-page-1 {
-    //   .featured-img {
-    //     width: 250px;
-    //     height: 250px;
-    //   }
-    // }
+        .featured-img {
+          align-self: flex-start;
+          width: 100%; 
+          height: 85%; 
+        }
+
+        p {
+          padding: .2rem;
+        }
+      }
+    }
   }
-}
-
-@media (max-width: 768px) {
-  // .featured-page-1 {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   flex-direction: column;
-
-  //   .featured-img {
-  //     width: 300px;
-  //     height: 300px;
-  //   }
-  // }
 }
