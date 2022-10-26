@@ -64,7 +64,39 @@ const Login = (props) => {
       transition={{ delay: 0.23 }}
       exit={{ opacity: 0 }}
     >
-      hello
+      <div className="container">
+        <h2>Login</h2>
+        <form onSubmit={handleFormSubmit}>
+          <div>
+            <label htmlFor="email">Email Address: </label>
+            <input
+              placeholder="email@email.com"
+              name="email"
+              type="email"
+              id="email"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="container">
+            <label htmlFor="pwd">Password: </label>
+            <input
+            placeholder="******"
+            name="password"
+            type="password"
+            id="pwd"
+            onChange={handleChange}
+            />
+          </div>
+          {/* {error ? (
+            <div>
+              <p className="error-text"> The provided credentials are incorrect</p>
+            </div>
+          ) : null} */}
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
     </motion.div>
   );
 };
