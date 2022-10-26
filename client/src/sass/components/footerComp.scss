@@ -1,5 +1,6 @@
 /* Footer Component Styles  */
 
+// SCSS Variables
 @import "../variables/coreVars.scss";
 
 .footer-section {
@@ -51,6 +52,10 @@
     }
   }
 }
+
+// Media Queries 
+
+// Phone 
 
 @media (max-width: 765px) {
   .footer-section {
