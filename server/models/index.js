@@ -1,4 +1,4 @@
 const Admin = require("./Admin");
+const Cake = require("./Cake");
 
-
-module.exports = { Admin };
+module.exports = { Admin, Cake };
