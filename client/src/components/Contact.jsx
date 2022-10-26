@@ -1,11 +1,12 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import brownCake from "../../imgs/contact/brown-floral.jpg";
-import lavenderCake from "../../imgs/contact/lavender-butterflies.jpg";
-import greenCake from "../../imgs/contact/green-with-rose.jpg";
+import brownCake from "../imgs/contact/brown-floral.jpg";
+import lavenderCake from "../imgs/contact/lavender-butterflies.jpg";
+import greenCake from "../imgs/contact/green-with-rose.jpg";
+
 
 // Styles 
-import "./contact.scss";
+import "../sass/components/contactComp.scss";
 
 // Sweet Alert 
 import swal from "sweetalert";

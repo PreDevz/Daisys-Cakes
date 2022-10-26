@@ -1,7 +1,7 @@
 import React from "react";
 
 // Components 
-import { Hero, About, Featured } from "../../components";
+import { Hero, About, Featured, Contact } from "../../components";
 
 // Styles 
 import "./home.scss";
@@ -22,6 +22,7 @@ const Home = () => {
       <Hero />
       <Featured />
       <About />
+      <Contact />
     </motion.div>
   );
 };
