@@ -12,6 +12,9 @@ const serviceId = "";
 const templateId = "";
 const publicKey = "";
 
+/* Importing the motion library from framer-motion. */
+import { motion } from "framer-motion";
+
 const Contact = () => {
   const form = useRef();
 
@@ -90,7 +93,11 @@ const Contact = () => {
 
   return (
     // need to move this anchor to navbar contact
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.23 }}
+      exit={{ opacity: 0 }}>
       <a href="#popup1">Contact</a>
       <div id="popup1" className="popup-overlay">
         <div className="popup">
@@ -114,7 +121,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 

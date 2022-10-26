@@ -52,6 +52,12 @@ p {
   line-height: 1.5;
 }
 
+p,
+li,
+a {
+  font-size: 18px;
+}
+
 // headers
 
 h1 {
@@ -85,4 +91,10 @@ h2 {
 .container {
   margin: 0 auto;
   max-width: 1180px;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 80px;
+  }
 }
