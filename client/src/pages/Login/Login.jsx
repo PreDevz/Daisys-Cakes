@@ -19,12 +19,12 @@ import Auth from "../../utils/auth";
 /* Importing the motion library from framer-motion. */
 import { motion } from "framer-motion";
 
-const Login = (props) => {
+const Login = () => {
   /* We're using the useState hook to keep track of the form state. */
   const [formState, setFormState] = useState({ email: "", password: "" });
 
   /* We're using the useMutation hook to make a mutation request to our GraphQL API. */
-  // const [login, { error, data }] = useMutation(LOGIN_USER);
+  const [loginuser, { error, data }] = useMutation(LOGIN_USER);
 
   /* We're using the handleChange function to update the form state based on the input changes.  */
   const handleChange = (event) => {
@@ -41,13 +41,14 @@ const Login = (props) => {
     event.preventDefault();
     console.log(formState);
     try {
-      const { data } = await login({
+      const { data } = await loginuser({
         variables: { ...formState },
       });
       /* We're using the Auth.login function to store the token in the local storage.  */
       Auth.login(data.login.token);
     } catch (e) {
       console.error(e);
+      setShowAlert(true);
     }
 
     /* We're using the setFormState function to clear the form state. */
@@ -87,11 +88,11 @@ const Login = (props) => {
             onChange={handleChange}
             />
           </div>
-          {/* {error ? (
+          {error ? (
             <div>
               <p className="error-text"> The provided credentials are incorrect</p>
             </div>
-          ) : null} */}
+          ) : null}
           <div>
             <button type="submit">Submit</button>
           </div>
