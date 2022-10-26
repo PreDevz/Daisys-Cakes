@@ -19,6 +19,13 @@
 	}
 }
 
+h2 {
+	letter-spacing: 0.03em;
+	line-height: 1;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
 .popup {
 	text-align: center;
 	margin: 70px auto;
@@ -121,4 +128,16 @@
 	&:hover {
 		background-color: #eda5d5;
 	}
+}
+
+.contact-img-container img {
+	display: inline-flex;
+	height: 400px;
+	width: 400px;
+	padding: 10px;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	border-radius: 25px;
+	transition: transform 0.25s ease;
 }

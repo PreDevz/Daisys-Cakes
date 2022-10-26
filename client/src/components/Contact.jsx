@@ -105,6 +105,7 @@ const Contact = () => {
       exit={{ opacity: 0 }}
       className="page" >
       <div className="contact-content">
+        <h2>Contact</h2>
         <p>Thank you for your interest in Daisy&#39;s Cakes! Where every cake is guarenteed to be made with love. Please click on the inquire form below and we&#39;ll get back to you as soon we can!</p>
         <div className="contact-img-container">
           <img src={lavenderCake} alt="lavender cake" />
