@@ -8,6 +8,8 @@ import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 /* loading the Stripe API. */
 import { loadStripe } from "@stripe/stripe-js";
 
+import "../sass/components/tipsComp.scss";
+
 /* loading the Stripe API. */
 const stripePromise = loadStripe(
   "pk_test_51LxKmeABGjvOJdT1vJsgQxijGf0XZhfuVtr4rBfTr9A7B7JDkMJWPZr615XuHhDr7NY5RS0cwKuAc4oU8bKHp5ZR00vJBFT5nA"
@@ -36,9 +38,12 @@ const TipsButton = ({ itemID, amount }) => {
   };
 
   return (
-    <button onClick={handleClick}>
-      Donate {amount}$
-    </button>
+    <div className="tipContainer">
+      <h2>Enjoyed our service? Leave a tip! 💕</h2>
+      <div>
+      <button className="tipBtn" onClick={handleClick}>Donate {amount}$</button>
+      </div>
+    </div>
   );
 };
 
