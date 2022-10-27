@@ -1,7 +1,16 @@
-@import "../../sass/main.scss";
+// Core Home Page Styles 
 
-#homePage,
-.page {
-    background-image: url("../../imgs/svgs/about.svg");
-    padding: 1rem;
+@import "../../sass/main.scss";
+@import "../../sass/variables/coreVars.scss";
+
+#homePage {
+    display: flex;
+    flex-direction: column; 
+
+    h2 {
+        margin: 2rem auto;
+        text-align: center;
+        width: fit-content;
+        border-bottom: 1px solid $purp-clr;
+    }
 }

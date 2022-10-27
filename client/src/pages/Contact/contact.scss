@@ -1,4 +1,6 @@
-// Contact Model 
+// Contact Model Styles 
+
+// Variables 
 
 @import "../../sass/variables/coreVars.scss";
 
@@ -23,7 +25,7 @@
   text-align: center;
   margin: 70px auto;
   padding: .8rem 1rem;
-  background: #fff;
+  background: $light-clr;
   border-radius: 5px;
   width: 50%;
   position: relative;
