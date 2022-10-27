@@ -25,9 +25,9 @@ const TipsButton = ({ itemID, amount }) => {
         lineItems: [{ price: itemID, quantity: 1 }],
         mode: "payment",
         successUrl:
-          window.location.protocol + "//www.bakedwithlove.herokuapp.com/",
+          window.location.protocol + "//bakedwithlove.herokuapp.com/",
         cancelUrl:
-          window.location.protocol + "//www.bakedwithlove.herokuapp.com/",
+          window.location.protocol + "//bakedwithlove.herokuapp.com/",
         submitType: "donate",
       })
       .then(function (result) {
