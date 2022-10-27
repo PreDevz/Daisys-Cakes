@@ -1,7 +1,12 @@
-import React from "react";
-import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
 /* eslint-disable react/prop-types */
+/* It's importing the React library. */
+import React from "react";
+
+/* It's importing the stripe/react library. */
+import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
+
+/* loading the Stripe API. */
+import { loadStripe } from "@stripe/stripe-js";
 
 /* loading the Stripe API. */
 const stripePromise = loadStripe(
@@ -17,8 +22,10 @@ const TipsButton = ({ itemID, amount }) => {
       .redirectToCheckout({
         lineItems: [{ price: itemID, quantity: 1 }],
         mode: "payment",
-        successUrl: window.location.protocol + "//bakedwithlove.herokuapp.com/",
-        cancelUrl: window.location.protocol + "//bakedwithlove.herokuapp.com/",
+        successUrl:
+          window.location.protocol + "//www.bakedwithlove.herokuapp.com/",
+        cancelUrl:
+          window.location.protocol + "//www.bakedwithlove.herokuapp.com/",
         submitType: "donate",
       })
       .then(function (result) {

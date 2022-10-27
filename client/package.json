@@ -5,6 +5,7 @@
   "proxy": "http://localhost:3001",
   "dependencies": {
     "@apollo/client": "^3.7.0",
+    "@chakra-ui/react": "^2.3.6",
     "@emailjs/browser": "^3.7.0",
     "@stripe/react-stripe-js": "^1.14.0",
     "@stripe/stripe-js": "^1.42.0",
