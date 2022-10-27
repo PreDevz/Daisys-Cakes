@@ -1,9 +1,10 @@
 /* Footer Component Styles  */
 
+// SCSS Variables
 @import "../variables/coreVars.scss";
 
 .footer-section {
-  background-color: #eff8ff;
+  background-color: $mid-light-clr;
   min-height: 30vh;
   display: flex;
   justify-content: center;
@@ -43,7 +44,7 @@
 
             &:hover {
               cursor: pointer;
-              color: #ff85c6;
+              color: $pink-clr;
             }
           }
         }
@@ -52,23 +53,37 @@
   }
 }
 
+// Media Queries 
+
+// Phone 
+
 @media (max-width: 765px) {
   .footer-section {
     .container {
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
+      gap: .8rem;
+      padding: 2rem 0;
+
       .footer-logo {
         width: 55vw;
       }
+
       .footer-sec {
         align-items: center;
         justify-content: center;
+        padding: 0;
+
         .footer-ul {
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
+
+          a {
+            font-size: 1rem !important;
+            word-wrap: break-word; 
+          }
         }
       }
     }
