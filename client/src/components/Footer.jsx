@@ -8,6 +8,7 @@ import "../sass/components/footerComp.scss";
 const Footer = () => {
   return (
     <footer className="footer-section">
+
       <div className="container">
         {/* Logo  */}
         <img className="footer-logo" src={footerImg} alt="" />
@@ -45,6 +46,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+        
       </div>
     </footer>
   );

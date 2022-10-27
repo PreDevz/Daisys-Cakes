@@ -7,7 +7,7 @@ import { Navbar, Footer } from "../components";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 // Pages
-import { Home, About, Contact, Admin } from "./index";
+import { Home, About, Contact, Admin, Login } from "./index";
 
 /* A library that allows for animations to be added to the page. */
 import { AnimatePresence } from "framer-motion";
@@ -23,7 +23,7 @@ const DaisyCakesContainer = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </main>
       <Footer />

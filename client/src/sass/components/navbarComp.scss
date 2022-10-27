@@ -1,13 +1,16 @@
+// Navbar Styles 
+
 /* Navbar Component Styles  */
 @import "../variables/coreVars.scss";
 
 .navbar {
+  z-index: 10;
   min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
-  background-color: #eff8ff;
+  padding: 0 1.2rem;
+  background-color: $mid-light-clr;
 
   li {
     list-style: none;
@@ -27,9 +30,8 @@
 
 .nav-menu {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
+  align-items: center; 
+  gap: 2.25rem;
 }
 
 .nav-link {
@@ -39,7 +41,7 @@
       rgba(100, 200, 200, 0),
       rgba(100, 200, 200, 0)
     ),
-    linear-gradient(to right, #ff85c6, #ff85c6);
+    linear-gradient(to right, $pink-clr, $pink-clr);
   background-size: 100% 0.1em, 0 0.1em;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -48,7 +50,7 @@
   &:hover,
   &:focus {
     background-size: 0 0.1em, 100% 0.1em;
-    color: #ff85c6;
+    color: $pink-clr;
   }
 }
 

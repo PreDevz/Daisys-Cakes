@@ -84,6 +84,7 @@ h2 {
   padding: 2.5rem 2rem;
   min-height: 100vh;
   width: 100%;
+  background-image: url("../imgs/svgs/about.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -97,5 +98,9 @@ h2 {
 @media (max-width: 768px) {
   main {
     margin-top: 80px;
+  }
+  
+  .page {
+    padding: 2rem 1rem;
   }
 }
