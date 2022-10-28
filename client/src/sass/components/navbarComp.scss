@@ -1,4 +1,4 @@
-// Navbar Styles 
+// Navbar Styles
 
 /* Navbar Component Styles  */
 @import "../variables/coreVars.scss";
@@ -24,13 +24,13 @@
 }
 
 #logo {
-  height: 75px;
+  height: 65px;
   margin: 0;
 }
 
 .nav-menu {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 2.25rem;
 }
 
