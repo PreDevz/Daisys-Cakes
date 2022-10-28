@@ -7,7 +7,6 @@ export const GET_ME = gql`
       username
       email
       savedCakes {
-        cakeId
         description
         title
         cakeUrl
