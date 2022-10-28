@@ -65,8 +65,8 @@ const About = () => {
               <p>
                 Daisy Salcido is the owner of Daisy&#39;s Cakes and is also the
                 designer and creator of every cake showcased. She graduated from
-                Le Cordon Bleu in 2010 and since then has been creating
-                beautiful, professional cakes from her home.
+                Le Cordon Bleu Culinary School in 2010 and since then has been
+                creating beautiful, professional cakes from her home.
                 <br />
                 <br />
                 With over a decade of professional experience, Daisy has worked
