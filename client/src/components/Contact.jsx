@@ -96,43 +96,64 @@ const Contact = () => {
   }
 
   return (
-
     // need to move this anchor to navbar contact
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.23 }}
       exit={{ opacity: 0 }}
-      className="page" >
-      <div className="contact-content">
-        <h2>Contact</h2>
-        <p>Thank you for your interest in Daisy&#39;s Cakes! Where every cake is guarenteed to be made with love. Please click on the inquire form below and we&#39;ll get back to you as soon we can!</p>
-        <div className="contact-img-container">
-          <img src={lavenderCake} alt="lavender cake" />
-          <img src={brownCake} alt="brown cake" />
-          <img src={greenCake} alt="green cake" />
+    >
+      <div className="featured-section">
+        <h2 id="contact">Contact</h2>
+        <p>
+          Thank you for your interest in Daisy&#39;s Cakes! Where every cake is
+          guarenteed to be made with love. Please click on the inquire form
+          below and we&#39;ll get back to you as soon we can!
+        </p>
+        <div className="featured-page-2">
+          <div>
+            <img className="featured-img" src={lavenderCake} alt="Birthday Cake" title="Birthday Cake" />
+          </div>
+          <div>
+            <img className="featured-img" src={brownCake} alt="Anniversary Cake" title="Anniversary Cake" />
+          </div>
+          <div>
+            <img className="featured-img" src={greenCake} alt="Wedding Cake" title="Wedding Cake" />
+          </div>
         </div>
       </div>
 
       <div className="inquire-button-container">
-        <a href="#popup1" id="inquireBtn">Inquire Form</a>
+        <a href="#popup1" id="inquireBtn">
+          Inquire Form
+        </a>
       </div>
       <div id="popup1" className="popup-overlay">
         <div className="popup">
           <h2>Contact Us!</h2>
-          <a className="close" href="#">&times;</a>
+          <a className="close" href="#">
+            &times;
+          </a>
           <div className="content">
             {/* Contact Form  */}
             <form ref={form} onSubmit={sendEmail}>
               {/* Form Name */}
               <label>Name</label>
-              <input type="text" name="user_name" placeholder="John Doe" />
+              <input type="name" name="user_name" placeholder="name" />
               {/* Form Email */}
               <label>Email</label>
-              <input type="email" name="user_email" placeholder="john@gmail.com" />
+              <input
+                type="email"
+                name="user_email"
+                placeholder="email@email.com"
+              />
               {/* Form Message */}
               <label>Message</label>
-              <textarea name="message" maxLength="750" placeholder="Add your message..." />
+              <textarea
+                name="message"
+                maxLength="750"
+                placeholder="Add your message..."
+              />
               {/* Form Send Button */}
               <input className="contact-send" type="submit" value="Send" />
             </form>
