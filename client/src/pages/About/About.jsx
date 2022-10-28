@@ -27,18 +27,16 @@ const About = () => {
                 Our Mission at <span>Daisy&#39;s Cakes</span>...
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Adipisci saepe nesciunt soluta praesentium veritatis cumque
-                similique dolorem, nulla vero quasi corrupti quidem voluptate
-                ullam magni magnam velit officiis deserunt cupiditate?
+                Here at Daisy&#39;s Cakes we believe that every cake should be
+                as unique as the person it&#39;s made for. Cakes symbolize
+                celebration and they bring friends and families together -
+                because of this, we believe that every single cake should be
+                baked with love.
                 <br />
-                <br />m ipsum dolor sit amet, consectetur adipisicing elit.
-                Adipisci saepe nesciunt soluta praesentium veritatis cumque
-                similique dolorem, nulla vero quasi corrupti quidem volupdipisci
-                saepe nesciunt soluta praesentium veritatis cumque similidipisci
-                saepe nesciunt soluta praesentium veritatis cumque similidipisci
-                saepe nesciunt soluta praesentium veritatis cumque similique
-                dolorem, nulla vero quasi corrupti quidem volupdipisc!
+                <br />
+                For any questions, comments, or inquiries please contact us at
+                cakesbydaisysalcido@gmail.com or send us a DM on our Instagram
+                page.
               </p>
             </div>
 
@@ -52,7 +50,7 @@ const About = () => {
             </div>
           </section>
 
-          <h2>Daisy&#39;s Cakes</h2>
+          <h2>Meet Daisy!</h2>
           <section className="about-page-s2 about-page-s">
             <div className="about-page-s2-right">
               <img
@@ -64,17 +62,17 @@ const About = () => {
 
             <div className="about-page-s2-left">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Adipisci saepe nesciunt soluta praesentium veritatis cumque
-                similique dolorem, nulla vero quasi corrupti quidem voluptate
-                ullam magni magnam velit officiis deserunt cupiditate?
+                Daisy Salcido is the owner of Daisy&#39;s Cakes and is also the
+                designer and creator of every cake showcased. She graduated from
+                Le Cordon Bleu in 2010 and since then has been creating
+                beautiful, professional cakes from her home.
                 <br />
                 <br />
-                onsectetur adipisicing elit. Adipisci saepe nesciunt soluta
-                praesentium veritatis cumque similique dolorem, nulla vero quasi
-                corrupti quidem voluptatesaepe nesciunt soluta praesentium
-                veritatis csaepe nesciunt soluta praesentium veritatis c ullam
-                magn
+                With over a decade of professional experience, Daisy has worked
+                with hundreds of clients to create and deliver unforgettable
+                cakes and memories. From birthdays, to graduations, to weddings,
+                and everywhere in-between, Daisy can come up with whatever theme
+                or design you like!
               </p>
             </div>
           </section>
