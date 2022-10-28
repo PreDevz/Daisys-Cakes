@@ -1,5 +1,24 @@
 /* Hero Component Styles  */
 
 .hero-section {
-	background-color: orange;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  max-height: auto;
+}
+
+.hero-img {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 765px) {
+  .hero-img {
+    width: 155vw;
+  }
 }

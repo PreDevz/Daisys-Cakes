@@ -1,0 +1,96 @@
+// About Page Styles
+
+@import "../../sass/main.scss";
+
+#aboutPage,
+.page {
+  background-image: url("../../imgs/svgs/about.svg");
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  align-self: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-page-s {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 5%;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem;
+
+  .about-page-s1-left {
+    padding: 0.5rem;
+
+    div {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 0.9rem;
+
+      span {
+        color: $pink-clr;
+      }
+    }
+  }
+
+  .about-page-img {
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 16px rgb(198, 198, 198);
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 830px) {
+  h2 {
+    text-align: center;
+  }
+
+  .about-container {
+    padding: 1rem 0;
+  }
+
+  .about-page-s {
+    flex-direction: column;
+    margin-top: 0;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      img {
+        width: 500px;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page-s {
+    div {
+      img {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .about-page-s {
+    div {
+      img {
+        width: 250px;
+      }
+    }
+  }
+}

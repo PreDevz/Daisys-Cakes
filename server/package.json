@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "watch": "nodemon server.js",
-    "seed": "node seeders/seed.js"
+    "seed": "node seeders/seed.js",
+    "lint": "eslint --fix ."
   },
   "keywords": [],
   "author": "",
@@ -14,12 +15,14 @@
   "dependencies": {
     "apollo-server-express": "^3.10.3",
     "bcrypt": "^5.0.0",
+    "dotenv": "^16.0.3",
     "express": "^4.17.2",
     "graphql": "^16.3.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.8"
   },
   "devDependencies": {
+    "eslint": "^8.25.0",
     "nodemon": "^2.0.3"
   }
 }

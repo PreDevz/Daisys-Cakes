@@ -1,5 +1,33 @@
 /* About Component Styles  */
 
 .about-section {
-	background-color: pink;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  flex-direction: column;
+  display: flex;
+
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 1200px;
+  }
+}
+
+.about-img {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+  .image-wrapper {
+    flex-direction: column;
+  }
 }
