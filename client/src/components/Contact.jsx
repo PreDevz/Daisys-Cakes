@@ -4,17 +4,16 @@ import brownCake from "../imgs/contact/brown-floral.jpg";
 import lavenderCake from "../imgs/contact/lavender-butterflies.jpg";
 import greenCake from "../imgs/contact/green-with-rose.jpg";
 
-
 // Styles 
 import "../sass/components/contactComp.scss";
 
 // Sweet Alert 
 import swal from "sweetalert";
 
-// need client create account with emailjs
-const serviceId = "";
-const templateId = "";
-const publicKey = "";
+// Pull ENV Variables For emailjs
+const REACT_APP_SERV_KEY = process.env.REACT_APP_SERV_KEY;
+const REACT_APP_FORM_TEMPLATE = process.env.REACT_APP_FORM_TEMPLATE;
+const REACT_APP_FORM_PUB_KEY = process.env.REACT_APP_FORM_PUB_KEY;
 
 /* Importing the motion library from framer-motion. */
 import { motion } from "framer-motion";
@@ -55,7 +54,7 @@ const Contact = () => {
     // (Temporarily here for testing)
     resetForm();
 
-    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+    emailjs.sendForm(REACT_APP_SERV_KEY, REACT_APP_FORM_TEMPLATE, form.current, REACT_APP_FORM_PUB_KEY).then(
       (result) => {
         console.log(result.text);
         console.log("Sent!");
@@ -81,6 +80,7 @@ const Contact = () => {
 
     // after 900ms reset form 
     setTimeout(() => {
+      
       // reset name value 
       form.current[0].value = "";
 
