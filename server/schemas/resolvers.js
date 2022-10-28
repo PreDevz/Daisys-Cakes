@@ -31,8 +31,14 @@ const resolvers = {
             }
 
             const token = signToken(admin);
-            return { token, admin };
+            return { token, admin };            
         },
+        addAdmin: async (parent, args) => {
+            const admin = await Admin.create(args);
+            const token = signToken(admin);
+      
+            return { token, admin };
+          },
         addedCake: async (parent, { input }, context) => {
             if (context.cake) {
                 const updatedCake = await Cake.findOneAndUpdate(
