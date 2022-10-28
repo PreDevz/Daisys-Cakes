@@ -3,6 +3,11 @@ import React from "react";
 // Styles
 import "./about.scss";
 
+// Images
+import Selfie from "../../imgs/daisy-selfie.jpeg";
+import Cakes from "../../imgs/homePageCakes/cupcakes.jpg";
+import LCBLogo from "../../imgs/Le_Cordon_Bleu_logo.jpeg";
+
 /* Importing the motion library from framer-motion. */
 import { motion } from "framer-motion";
 
@@ -42,7 +47,7 @@ const About = () => {
 
             <div className="about-page-s1-right">
               <img
-                src="https://img.freepik.com/free-photo/cupcakes_74190-20.jpg?w=1380&t=st=1666295331~exp=1666295931~hmac=f4102f636a2440539a96c612eaa9b479c79dc718d521ba1d90baac95a242e95a"
+                src={Cakes}
                 alt=""
                 className="about-page-img"
                 title="Hello"
@@ -53,11 +58,7 @@ const About = () => {
           <h2>Meet Daisy!</h2>
           <section className="about-page-s2 about-page-s">
             <div className="about-page-s2-right">
-              <img
-                src="https://img.freepik.com/free-photo/ingredients-cook-recipe-pink_144627-24731.jpg?w=1380&t=st=1666295389~exp=1666295989~hmac=fef1648b96b0a201051762a81feeade32e4a74f83b079a8273fbd10f23377ecb"
-                alt=""
-                className="about-page-img"
-              />
+              <img src={Selfie} alt="" className="about-page-img" />
             </div>
 
             <div className="about-page-s2-left">
@@ -74,6 +75,10 @@ const About = () => {
                 and everywhere in-between, Daisy can come up with whatever theme
                 or design you like!
               </p>
+            </div>
+
+            <div className="about-page-s2-right">
+              <img src={LCBLogo} alt="" className="about-page-img" />
             </div>
           </section>
         </div>
