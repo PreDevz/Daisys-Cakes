@@ -1,7 +1,7 @@
 import React from "react";
 
 // Components 
-import { Hero, About, Featured, TipsButton } from "../../components";
+import { Hero, About, Featured, Contact, TipsButton } from "../../components";
 
 // Styles 
 import "./home.scss";
@@ -24,6 +24,7 @@ const Home = () => {
       <div className="page">
         <Featured />
         <About />
+        <Contact />
       </div>
       <TipsButton
         amount={"10.00"}
