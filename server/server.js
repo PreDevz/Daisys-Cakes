@@ -16,6 +16,12 @@ const { typeDefs, resolvers } = require("./schemas");
 /* Importing the connection to the database. */
 const db = require("./config/connection");
 
+// Express router for Admin-Bro
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const AdminBro = require("admin-bro");
+const AdminBroExpressjs = require("admin-bro-expressjs");
+
 /* If there is a port defined in the environment, use that. If there is not, use 3001. */
 const PORT = process.env.PORT || 3001;
 
@@ -30,9 +36,31 @@ const server = new ApolloServer({
   context: authMiddleware,
 });
 
+// We have to tell AdminBro that we will manage mongoose resources with it
+AdminBro.registerAdapter(require("admin-bro-mongoose"));
+
 /* This is middleware that is parsing the request body. */
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(bodyParser.json());
+
+// Resources definitions
+const User = mongoose.model("User", {
+  email: { type: String, required: true },
+  password: { type: String, required: true },
+  role: { type: String, enum: ["admin", "restricted"], required: true },
+});
+
+// Pass all configuration settings to AdminBro
+const adminBro = new AdminBro({
+  resources: [User],
+  rootPath: "/admin",
+});
+
+// Build and use a router which will handle all AdminBro routes
+const router = AdminBroExpressjs.buildRouter(adminBro);
+app.use(adminBro.options.rootPath, router);
+
 
 /* This is middleware that is serving up the static files for the React app. */
 if (process.env.NODE_ENV === "production") {
@@ -47,6 +75,7 @@ app.get("/", (req, res) => {
 
 /* Create a new instance of an Apollo server with the GraphQL schema */
 const startApolloServer = async (typeDefs, resolvers) => {
+  await app.listen(8080, () => console.log("Example app listening on port 8080!"));
   await server.start();
   server.applyMiddleware({ app });
 

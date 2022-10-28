@@ -11,7 +11,6 @@ const typeDefs = gql`
     savedCake: [Cake]
   }
   type Cake {
-    cakeId: String!
     title: String!
     description: String
     cakeUrl: [String]
@@ -32,7 +31,7 @@ const typeDefs = gql`
   type Mutation {
     login(email: String!, password: String!): Auth
     addedCake(title: String!, description: String, cakeUrl: String): Admin
-    removeCake(cakeId: String!): Admin
+    removeCake(_id: String!): Admin
     addCake(input: CakeInput): Admin
   }
 `;
