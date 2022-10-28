@@ -83,15 +83,7 @@ _This section will be deleted later when the project is completed. For now here 
 
 Below are various screenshots of the website:
 
-<img src="./assets/readme/hero.png"  width=70% height=70%>
-
-<img src="./assets/readme/homepage.png"  width=70% height=70%>
-
-<img src="./assets/readme/events.png"  width=70% height=70%>
-
-<img src="./assets/readme/admin.png"  width=70% height=70%>
-
-<img src="./assets/readme/mobile.png"  width=50% height=50%>
+Screenshots to come...
 
 ---
 
