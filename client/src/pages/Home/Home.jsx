@@ -17,12 +17,16 @@ const Home = () => {
       transition={{ delay: 0.23 }}
       exit={{ opacity: 0 }}
       id="homePage"
-      className="page"
     >
+
       <Hero />
-      <Featured />
-      <About />
-      <Contact />
+      {/* So the page stylings don't effect the hero section  */}
+      <div className="page">
+        <Featured />
+        <About />
+        <Contact />
+      </div>
+
     </motion.div>
   );
 };

@@ -10,11 +10,11 @@ const cakeSchema = new Schema({
     type: String,
     required: true
   },
-  cakeId: {
-    type: String,
-    required: true,
-  },
-  cakeUrl: [String]
+  // cakeId: {
+  //   type: String,
+  //   required: true,
+  // },
+  cakeUrl: String
 })
 
 const Cake = model('Cake', cakeSchema);

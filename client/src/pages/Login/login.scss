@@ -1,0 +1,78 @@
+//Login Page Styles
+
+@import "../../sass/variables/coreVars.scss";
+
+/* Setting the background image for the login page. */
+.login-page {
+  padding: 20px;
+  height: 600px;
+  background-image: url(../../imgs/svgs/login.svg);
+  background-position: center;
+  background-size: cover;
+  background-color: #eff8ff;
+}
+
+/* Login container properties */
+.login-container {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  background-color: $light-clr;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+/* Email input properties */
+.email-input,
+.password-input {
+  padding: 5px;
+  text-align: left;
+  justify-content: center;
+  font-size: 14px;
+}
+
+/*Sign in button properties */
+.signin-btn {
+  padding: 15px 100px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 5em;
+  color: #fff;
+  background: linear-gradient(to right, #9c27b0, #e040fb);
+  border: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  transition: 200ms;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* input boxes properties */
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: rgb(38, 50, 56);
+  background: rgba(47, 46, 46, 0.071);
+  font-weight: 700;
+  letter-spacing: 1px;
+  outline: 2px solid rgba(0, 0, 0, 0.064) !important;
+}
