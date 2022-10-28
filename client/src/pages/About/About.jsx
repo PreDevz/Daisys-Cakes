@@ -3,6 +3,11 @@ import React from "react";
 // Styles
 import "./about.scss";
 
+// Images
+import Selfie from "../../imgs/daisy-selfie.jpeg";
+import Cakes from "../../imgs/homePageCakes/cupcakes.jpg";
+import LCBLogo from "../../imgs/Le_Cordon_Bleu_logo.jpeg";
+
 /* Importing the motion library from framer-motion. */
 import { motion } from "framer-motion";
 
@@ -27,24 +32,22 @@ const About = () => {
                 Our Mission at <span>Daisy&#39;s Cakes</span>...
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Adipisci saepe nesciunt soluta praesentium veritatis cumque
-                similique dolorem, nulla vero quasi corrupti quidem voluptate
-                ullam magni magnam velit officiis deserunt cupiditate?
+                Here at Daisy&#39;s Cakes we believe that every cake should be
+                as unique as the person it&#39;s made for. Cakes symbolize
+                celebration and they bring friends and families together -
+                because of this, we believe that every single cake should be
+                baked with love.
                 <br />
-                <br />m ipsum dolor sit amet, consectetur adipisicing elit.
-                Adipisci saepe nesciunt soluta praesentium veritatis cumque
-                similique dolorem, nulla vero quasi corrupti quidem volupdipisci
-                saepe nesciunt soluta praesentium veritatis cumque similidipisci
-                saepe nesciunt soluta praesentium veritatis cumque similidipisci
-                saepe nesciunt soluta praesentium veritatis cumque similique
-                dolorem, nulla vero quasi corrupti quidem volupdipisc!
+                <br />
+                For any questions, comments, or inquiries please contact us at
+                cakesbydaisysalcido@gmail.com or send us a DM on our Instagram
+                page.
               </p>
             </div>
 
             <div className="about-page-s1-right">
               <img
-                src="https://img.freepik.com/free-photo/cupcakes_74190-20.jpg?w=1380&t=st=1666295331~exp=1666295931~hmac=f4102f636a2440539a96c612eaa9b479c79dc718d521ba1d90baac95a242e95a"
+                src={Cakes}
                 alt=""
                 className="about-page-img"
                 title="Hello"
@@ -52,30 +55,30 @@ const About = () => {
             </div>
           </section>
 
-          <h2>Daisy&#39;s Cakes</h2>
+          <h2>Meet Daisy!</h2>
           <section className="about-page-s2 about-page-s">
             <div className="about-page-s2-right">
-              <img
-                src="https://img.freepik.com/free-photo/ingredients-cook-recipe-pink_144627-24731.jpg?w=1380&t=st=1666295389~exp=1666295989~hmac=fef1648b96b0a201051762a81feeade32e4a74f83b079a8273fbd10f23377ecb"
-                alt=""
-                className="about-page-img"
-              />
+              <img src={Selfie} alt="" className="about-page-img" />
             </div>
 
             <div className="about-page-s2-left">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Adipisci saepe nesciunt soluta praesentium veritatis cumque
-                similique dolorem, nulla vero quasi corrupti quidem voluptate
-                ullam magni magnam velit officiis deserunt cupiditate?
+                Daisy Salcido is the owner of Daisy&#39;s Cakes and is also the
+                designer and creator of every cake showcased. She graduated from
+                Le Cordon Bleu Culinary School in 2010 and since then has been
+                creating beautiful, professional cakes from her home.
                 <br />
                 <br />
-                onsectetur adipisicing elit. Adipisci saepe nesciunt soluta
-                praesentium veritatis cumque similique dolorem, nulla vero quasi
-                corrupti quidem voluptatesaepe nesciunt soluta praesentium
-                veritatis csaepe nesciunt soluta praesentium veritatis c ullam
-                magn
+                With over a decade of professional experience, Daisy has worked
+                with hundreds of clients to create and deliver unforgettable
+                cakes and memories. From birthdays, to graduations, to weddings,
+                and everywhere in-between, Daisy can come up with whatever theme
+                or design you like!
               </p>
+            </div>
+
+            <div className="about-page-s2-right">
+              <img src={LCBLogo} alt="" className="about-page-img" />
             </div>
           </section>
         </div>
