@@ -11,7 +11,7 @@ db.once("open", async () => {
 
   // bulk create each model
   const cakes = await Cake.insertMany(CakeData);
-  const admins = await Admin.insertMany(AdminData);
+  const admins = await Admin.create(AdminData);
 
   console.log("all done!");
   process.exit(0);
