@@ -1,0 +1,32 @@
+.tipContainer {
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url(../../imgs/svgs/tips.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tipBtn {
+    border-radius: 5px;
+    width: 200px;
+    margin: 1rem auto 0 auto;
+    background: #ff85c6;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 1rem 0;
+    font-weight: 700;
+    transition: 200ms;
+
+    &:hover {
+    cursor: pointer;
+    background: #c397ed;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+}

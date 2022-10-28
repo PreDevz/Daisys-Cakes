@@ -1,7 +1,7 @@
 import React from "react";
 
 // Components 
-import { Hero, About, Featured, Contact } from "../../components";
+import { Hero, About, Featured, Contact, TipsButton } from "../../components";
 
 // Styles 
 import "./home.scss";
@@ -26,7 +26,10 @@ const Home = () => {
         <About />
         <Contact />
       </div>
-
+      <TipsButton
+        amount={"10.00"}
+        itemID="price_1LxN1yABGjvOJdT1PZmRUIqJ"
+      ></TipsButton>
     </motion.div>
   );
 };
