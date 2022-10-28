@@ -5,5 +5,6 @@ import Hero from "./Hero";
 import About from "./About";
 import Featured from "./Featured";
 import Footer from "./Footer";
+import Contact from "./Contact";
 
-export { Navbar, Hero, About, Featured, Footer };
+export { Navbar, Hero, About, Featured, Footer, Contact };

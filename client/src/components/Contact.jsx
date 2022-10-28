@@ -1,8 +1,12 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import brownCake from "../imgs/contact/brown-floral.jpg";
+import lavenderCake from "../imgs/contact/lavender-butterflies.jpg";
+import greenCake from "../imgs/contact/green-with-rose.jpg";
+
 
 // Styles 
-import "./contact.scss";
+import "../sass/components/contactComp.scss";
 
 // Sweet Alert 
 import swal from "sweetalert";
@@ -47,7 +51,7 @@ const Contact = () => {
 
       return;
     }
-    
+
     // (Temporarily here for testing)
     resetForm();
 
@@ -66,7 +70,7 @@ const Contact = () => {
       (error) => {
         console.log(error.text);
         swal({
-         text: "Uh oh!, An unexpected error occurred."
+          text: "Uh oh!, An unexpected error occurred."
         });
       }
     );
@@ -92,13 +96,27 @@ const Contact = () => {
   }
 
   return (
+
     // need to move this anchor to navbar contact
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.23 }}
-      exit={{ opacity: 0 }}>
-      <a href="#popup1">Contact</a>
+      exit={{ opacity: 0 }}
+      className="page" >
+      <div className="contact-content">
+        <h2>Contact</h2>
+        <p>Thank you for your interest in Daisy&#39;s Cakes! Where every cake is guarenteed to be made with love. Please click on the inquire form below and we&#39;ll get back to you as soon we can!</p>
+        <div className="contact-img-container">
+          <img src={lavenderCake} alt="lavender cake" />
+          <img src={brownCake} alt="brown cake" />
+          <img src={greenCake} alt="green cake" />
+        </div>
+      </div>
+
+      <div className="inquire-button-container">
+        <a href="#popup1" id="inquireBtn">Inquire Form</a>
+      </div>
       <div id="popup1" className="popup-overlay">
         <div className="popup">
           <h2>Contact Us!</h2>

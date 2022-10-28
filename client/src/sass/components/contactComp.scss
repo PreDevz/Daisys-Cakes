@@ -1,0 +1,143 @@
+// Contact Model 
+
+@import "../../sass/variables/coreVars.scss";
+
+.popup-overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.745);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+
+	&:target {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+h2 {
+	letter-spacing: 0.03em;
+	line-height: 1;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.popup {
+	text-align: center;
+	margin: 70px auto;
+	padding: .8rem 1rem;
+	background: #fff;
+	border-radius: 5px;
+	width: 50%;
+	position: relative;
+	transition: all 1.2s ease-in-out;
+
+	form {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem .3rem;
+		font-size: 1.03rem;
+
+		label {
+			font-weight: bold;
+			text-align: start;
+			margin: .5rem 0;
+		}
+
+		input {
+			border-radius: 5px;
+			padding: .4rem;
+			font-size: 1.03rem;
+			outline: none;
+			border: 1px solid rgb(188, 188, 188);
+		}
+
+		textarea {
+			font-size: 1.03rem;
+			padding: .4rem;
+			min-height: 6.5rem;
+			resize: none;
+			font-family: inherit;
+			outline: none;
+			border-radius: 5px;
+			border: 1px solid rgb(188, 188, 188);
+		}
+
+		.contact-send {
+			border-radius: 5px;
+			width: 50%;
+			margin: 1rem auto 0 auto;
+			background: $pink-clr;
+			color: $light-clr;
+			outline: none;
+			border: none;
+			padding: .5rem 0;
+
+			&:hover {
+				cursor: pointer;
+				background-color: #c397ed;
+			}
+		}
+	}
+
+	h2 {
+		margin: .6rem;
+		color: $pink-clr;
+	}
+
+	.close {
+		position: absolute;
+		top: 4px;
+		right: 15px;
+		transition: all 200ms;
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		color: $dark-clr;
+
+		&:hover {
+			cursor: pointer;
+			color: $pink-clr;
+		}
+	}
+
+	.content {
+		max-height: 30%;
+		overflow: auto;
+	}
+}
+
+.inquire-button-container {
+	width: 100%;
+	display: flex;
+}
+
+#inquireBtn {
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+	background-color: $pink-clr;
+	padding: .8rem;
+	border-radius: 8px;
+	color: #fff;
+
+	&:hover {
+		background-color: #eda5d5;
+	}
+}
+
+.contact-img-container img {
+	display: inline-flex;
+	height: 400px;
+	width: 400px;
+	padding: 10px;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	border-radius: 25px;
+	transition: transform 0.25s ease;
+}

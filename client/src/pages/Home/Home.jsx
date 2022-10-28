@@ -1,7 +1,7 @@
 import React from "react";
 
 // Components 
-import { Hero, About, Featured } from "../../components";
+import { Hero, About, Featured, Contact } from "../../components";
 
 // Styles 
 import "./home.scss";
@@ -24,6 +24,7 @@ const Home = () => {
       <div className="page">
         <Featured />
         <About />
+        <Contact />
       </div>
 
     </motion.div>
