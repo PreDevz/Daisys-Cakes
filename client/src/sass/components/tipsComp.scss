@@ -1,5 +1,9 @@
+// Tip jar styles 
+
+// Variables 
+@import "../variables/coreVars.scss";
+
 .tipContainer {
-    // border: 1px solid black;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -12,11 +16,11 @@
 }
 
 .tipBtn {
-    border-radius: 5px;
+    border-radius: 8px;
     width: 200px;
     margin: 1rem auto 0 auto;
-    background: #ff85c6;
-    color: #fff;
+    background: $pink-clr;
+    color: $light-clr;
     outline: none;
     border: none;
     padding: 1rem 0;

@@ -37,7 +37,8 @@
 
           &:hover {
             cursor: pointer;
-            background-color: rgb(255, 97, 229);
+            background-color: #c397ed;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
           }
         }
       }
@@ -53,6 +54,7 @@
 
   .about-section {
     padding: 0;
+
     .image-wrapper {
       display: flex;
       flex-direction: column !important;
@@ -63,7 +65,8 @@
 
       .about-img {
         height: auto !important;
-        width: 75% !important;
+        width: 45% !important;
+        max-width: 225px;
         margin-bottom: 1.2rem;
         border-radius: 1.56rem;
       }

@@ -41,7 +41,7 @@ const TipsButton = ({ itemID, amount }) => {
   return (
     <div className="tipContainer">
       <h2>Enjoyed our service? Leave a tip! 💕</h2>
-      <div>
+      <div className="hello">
       <button className="tipBtn" onClick={handleClick}>Donate {amount}$</button>
       </div>
     </div>

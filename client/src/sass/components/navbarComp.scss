@@ -69,6 +69,8 @@
   background-color: black;
 }
 
+// Media Queries 
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -99,7 +101,7 @@
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: #eff8ff;
+    background-color: $mid-light-clr;
     width: 100%;
     text-align: center;
     transition: 0.3s;
