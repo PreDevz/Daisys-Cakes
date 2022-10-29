@@ -95,8 +95,6 @@ _This section will be deleted later when the project is completed. For now here 
 
 Below are various screenshots of the website:
 
-Screenshots to come...
-
 <img src="./assets/hero.png"  width=70% height=70%>
 
 <img src="./assets/home1.png"  width=70% height=70%>
