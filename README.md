@@ -32,9 +32,18 @@ ADMIN_EMAIL=<admin_email>
 ADMIN_PASSWORD=<admin_password>
 ```
 
-5. Change the value of the `ADMIN` variables to whatever you want your administrator login for the website to be.
-6. In your console/terminal, execute `npm run seed` from the root of your repo to seed the database.
-7. You are now ready to run the application by running `npm run develop`.
+_This application utilizes EmailJS for the the automatic email form You must create an account on the website and input your credentials in the format below. If you do not wish to use the EmailJS functionality then steps 4 and 5 can be skipped_
+
+4. Change the value of the `ADMIN` variables to whatever you want your administrator login for the website to be. 5. Navigate to the `/client` folder and create a new file in the root called `.env`. Within this file, copy and paste the following:
+
+```md
+REACT_APP_SERV_KEY=<server_key>
+REACT_APP_FORM_TEMPLATE=<template_key>
+REACT_APP_FORM_PUB_KEY=<public_key>
+```
+
+5. In your console/terminal, execute `npm run seed` from the root of your repo to seed the database.
+6. You are now ready to run the application by running `npm run develop`.
 
 ---
 
@@ -44,6 +53,7 @@ Below is a list of all the technologies we utilized in order to build this websi
 
 ### Server
 
+- [adminbro](https://beta.adminbro.com)
 - [apollo-server-express](https://www.npmjs.com/package/apollo-server-express)
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
 - [express](https://www.npmjs.com/package/express)
@@ -63,7 +73,9 @@ Below is a list of all the technologies we utilized in order to build this websi
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 - [react-scripts](https://www.npmjs.com/package/react-scripts)
 - [sass](https://sass-lang.com)
+- [stripe](https://stripe.com)
 - [sweetalert](https://sweetalert.js.org)
+- [swiperjs](https://swiperjs.com)
 
 ---
 
@@ -84,6 +96,14 @@ _This section will be deleted later when the project is completed. For now here 
 Below are various screenshots of the website:
 
 Screenshots to come...
+
+<img src="./assets/hero.png"  width=70% height=70%>
+
+<img src="./assets/home1.png"  width=70% height=70%>
+
+<img src="./assets/about.png"  width=70% height=70%>
+
+<img src="./assets/mobile.png"  width=30% height=30%>
 
 ---
 
