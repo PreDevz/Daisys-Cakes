@@ -67,10 +67,17 @@ const Login = () => {
       <div className="login-container">
         <h2>Login</h2>
         {data ? 
-            (<p>
-              Successful! Redirecting...
-              { window.location.href="/admin" }
-           </p>)
+          (
+            <p>
+            Successful! Redirecting...
+            <br />
+
+            {/* Do not show "/admin" after trying to login  */}
+            <div className="hidden">
+              {window.location.href = "/admin"}
+            </div>
+            </p>
+          )
          : (
           <form onSubmit={handleFormSubmit}>
             <div className="email-input">
