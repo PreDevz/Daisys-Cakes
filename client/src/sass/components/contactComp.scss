@@ -13,6 +13,7 @@
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  z-index: 1;
 
   &:target {
     visibility: visible;
@@ -24,6 +25,10 @@ h2 {
   letter-spacing: 0.03em;
   line-height: 1;
   margin-bottom: 40px;
+  text-align: center;
+}
+
+#contact-text {
   text-align: center;
 }
 
@@ -170,21 +175,21 @@ h2 {
     max-height: 360px;
     text-align: center;
     margin-bottom: 1rem;
+  }
+}
 
-    .featured-img {
-      width: 320px;
-      height: 320px;
-      border-radius: 0.8rem;
-      transition: transform 325ms ease-out;
+.featured-img {
+  max-width: 320px;
+  max-height: 320px;
+  border-radius: 0.8rem;
+  transition: transform 325ms ease-out;
 
-      // Image hover effect
-      &:hover {
-        filter: contrast(105%);
-        cursor: pointer;
-        transform: translate(-3px, -4px);
-        border: 1px solid $pink-clr;
-      }
-    }
+  // Image hover effect
+  &:hover {
+    filter: contrast(105%);
+    cursor: pointer;
+    transform: translate(-3px, -4px);
+    border: 1px solid $pink-clr;
   }
 }
 
@@ -198,17 +203,23 @@ h2 {
         flex-direction: column;
         align-items: center;
 
-        .featured-img {
-          width: 275px;
-          height: 275px;
-        }
-
         p {
           font-size: 1.1rem;
           padding: 0.2rem;
         }
       }
     }
+  }
+  .featured-img {
+    width: 275px;
+    height: 275px;
+  }
+}
+
+@media (max-width: 850) {
+  .featured-img {
+    width: 260px;
+    height: 260px;
   }
 }
 
@@ -221,17 +232,16 @@ h2 {
       flex-wrap: wrap;
 
       div {
-        .featured-img {
-          margin-bottom: 1rem;
-          border-radius: 8px;
-          width: 250px;
-          height: 250px;
-        }
-
         p {
           font-size: 1rem;
         }
       }
+    }
+    .featured-img {
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      width: 250px;
+      height: 250px;
     }
   }
 }
@@ -241,22 +251,28 @@ h2 {
 @media (max-width: 768px) {
   .featured-section {
     .featured-page-2 {
-      align-items: center;
-      flex-wrap: wrap;
-      flex-direction: column;
+      // align-items: center;
+      // flex-wrap: wrap;
+      // flex-direction: column;
 
       div {
-        .featured-img {
-          margin-bottom: 1rem;
-          border-radius: 8px;
-          width: 250px;
-          height: 250px;
-        }
-
         p {
           font-size: 1rem;
         }
       }
     }
+  }
+  .featured-img {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 300px) {
+  .featured-img {
+    width: 175px;
+    height: 175px;
   }
 }

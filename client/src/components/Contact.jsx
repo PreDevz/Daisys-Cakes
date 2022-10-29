@@ -1,13 +1,30 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import brownCake from "../imgs/contact/brown-floral.jpg";
 import lavenderCake from "../imgs/contact/lavender-butterflies.jpg";
 import greenCake from "../imgs/contact/green-with-rose.jpg";
+import movingCake from "../imgs/contact/moving-new-mexico-1.jpg";
+import fastCake from "../imgs/contact/two-fast.jpg";
+import sandlotCake from "../imgs/contact/sandlot-1.jpg";
+import flamingoCake from "../imgs/contact/flamingo.jpg";
+import sweetCake from "../imgs/contact/two-sweet.jpg";
+import lavbdayCake from "../imgs/contact/lavbday.jpg";
 
-// Styles 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
+// import required modules
+import { FreeMode, Pagination } from "swiper";
+
+// Styles
 import "../sass/components/contactComp.scss";
 
-// Sweet Alert 
+// Sweet Alert
 import swal from "sweetalert";
 
 // Pull ENV Variables For emailjs
@@ -27,7 +44,7 @@ const Contact = () => {
     // Checks if name is empty
     if (form.current[0].value === "") {
       swal({
-        text: "Please add your name!"
+        text: "Please add your name!",
       });
 
       return;
@@ -36,7 +53,7 @@ const Contact = () => {
     // Checks if email is empty
     if (form.current[1].value === "") {
       swal({
-        text: "Please add your email!"
+        text: "Please add your email!",
       });
 
       return;
@@ -45,7 +62,7 @@ const Contact = () => {
     // Checks if message is empty
     if (form.current[2].value === "") {
       swal({
-        text: "Please give us a message!"
+        text: "Please give us a message!",
       });
 
       return;
@@ -54,43 +71,47 @@ const Contact = () => {
     // (Temporarily here for testing)
     resetForm();
 
-    emailjs.sendForm(REACT_APP_SERV_KEY, REACT_APP_FORM_TEMPLATE, form.current, REACT_APP_FORM_PUB_KEY).then(
-      (result) => {
-        console.log(result.text);
-        console.log("Sent!");
-        swal({
-          text: "Message was successfully sent!"
-        });
+    emailjs
+      .sendForm(
+        REACT_APP_SERV_KEY,
+        REACT_APP_FORM_TEMPLATE,
+        form.current,
+        REACT_APP_FORM_PUB_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("Sent!");
+          swal({
+            text: "Message was successfully sent!",
+          });
 
-        // Call the Reset Function 
-        resetForm();
-
-      },
-      (error) => {
-        console.log(error.text);
-        swal({
-          text: "Uh oh!, An unexpected error occurred."
-        });
-      }
-    );
+          // Call the Reset Function
+          resetForm();
+        },
+        (error) => {
+          console.log(error.text);
+          swal({
+            text: "Uh oh!, An unexpected error occurred.",
+          });
+        }
+      );
   };
 
-  // Function to reset form 
+  // Function to reset form
   function resetForm() {
-
-    // after 900ms reset form 
+    // after 900ms reset form
     setTimeout(() => {
-      
-      // reset name value 
+      // reset name value
       form.current[0].value = "";
 
-      // reset email value 
+      // reset email value
       form.current[1].value = "";
 
-      // reset Message value 
+      // reset Message value
       form.current[2].value = "";
 
-      // Close the Form 
+      // Close the Form
       window.location.href = "#";
     }, 900);
   }
@@ -105,27 +126,169 @@ const Contact = () => {
     >
       <div className="featured-section">
         <h2 id="contact">Contact</h2>
-        <p>
+        <p id="contact-text">
           Thank you for your interest in Daisy&#39;s Cakes! Where every cake is
           guarenteed to be made with love. Please click on the inquire form
           below and we&#39;ll get back to you as soon we can!
         </p>
-        <div className="featured-page-2">
+        {/* <div className="featured-page-2">
           <div>
-            <img className="featured-img" src={lavenderCake} alt="Birthday Cake" title="Birthday Cake" />
+            <img
+              className="featured-img"
+              src={lavenderCake}
+              alt="Birthday Cake"
+              title="Birthday Cake"
+            />
           </div>
           <div>
-            <img className="featured-img" src={brownCake} alt="Anniversary Cake" title="Anniversary Cake" />
+            <img
+              className="featured-img"
+              src={brownCake}
+              alt="Anniversary Cake"
+              title="Anniversary Cake"
+            />
           </div>
           <div>
-            <img className="featured-img" src={greenCake} alt="Wedding Cake" title="Wedding Cake" />
+            <img
+              className="featured-img"
+              src={greenCake}
+              alt="Wedding Cake"
+              title="Wedding Cake"
+            />
           </div>
-        </div>
+        </div> */}
       </div>
+
+      <Swiper
+        slidesPerView={5}
+        spaceBetween={20}
+        breakpoints={{
+          175: {
+            slidesPerView: 2,
+            spaceBetween: 150,
+          },
+          475: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          820: {
+            slidesPerView: 3,
+            spaceBetween: 350,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 200,
+          },
+        }}
+        centeredSlides={true}
+        freeMode={true}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img
+            className="featured-img"
+            src={lavenderCake}
+            alt="Birthday Cake"
+            title="Birthday Cake"
+            // width={320}
+            // height={320}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="featured-img"
+            src={brownCake}
+            alt="Anniversary Cake"
+            title="Anniversary Cake"
+            // width={320}
+            // height={320}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="featured-img"
+            src={greenCake}
+            alt="Wedding Cake"
+            title="Wedding Cake"
+            // width={320}
+            // height={320}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="featured-img"
+            src={movingCake}
+            alt="Moving Cake"
+            title="Moving Cake"
+            // width={320}
+            // height={320}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="featured-img"
+            src={fastCake}
+            alt="Two-Fast Cake"
+            title="Two-Fast Cake"
+            // width={320}
+            // height={320}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="featured-img"
+            src={sandlotCake}
+            alt="Sandlot Cake"
+            title="Sandlot Cake"
+            // width={320}
+            // height={320}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="featured-img"
+            src={flamingoCake}
+            alt="Flamingo Cake"
+            title="Flamingo Cake"
+            // width={320}
+            // height={320}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="featured-img"
+            src={sweetCake}
+            alt="Sweet Cake"
+            title="Sweet Cake"
+            // width={320}
+            // height={320}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="featured-img"
+            src={lavbdayCake}
+            alt="Bday Cake"
+            title="Bday Cake"
+            // width={320}
+            // height={320}
+          />
+        </SwiperSlide>
+      </Swiper>
 
       <div className="inquire-button-container">
         <a href="#popup1" id="inquireBtn">
-          Inquire Form
+          Contact Us
         </a>
       </div>
       <div id="popup1" className="popup-overlay">
