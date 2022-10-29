@@ -1,14 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
+
+// Email JS 
 import emailjs from "@emailjs/browser";
-import brownCake from "../imgs/contact/brown-floral.jpg";
-import lavenderCake from "../imgs/contact/lavender-butterflies.jpg";
-import greenCake from "../imgs/contact/green-with-rose.jpg";
-import movingCake from "../imgs/contact/moving-new-mexico-1.jpg";
-import fastCake from "../imgs/contact/two-fast.jpg";
-import sandlotCake from "../imgs/contact/sandlot-1.jpg";
-import flamingoCake from "../imgs/contact/flamingo.jpg";
-import sweetCake from "../imgs/contact/two-sweet.jpg";
-import lavbdayCake from "../imgs/contact/lavbday.jpg";
+
+// Images 
+import { brownCake, lavenderCake, greenCake, movingCake, fastCake, sandlotCake, flamingoCake, sweetCake, lavbdayCake } from "../imgs";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -131,32 +127,6 @@ const Contact = () => {
           guarenteed to be baked with love. Please click on the button below and
           we&#39;ll get back to you as soon we can!
         </p>
-        {/* <div className="featured-page-2">
-          <div>
-            <img
-              className="featured-img"
-              src={lavenderCake}
-              alt="Birthday Cake"
-              title="Birthday Cake"
-            />
-          </div>
-          <div>
-            <img
-              className="featured-img"
-              src={brownCake}
-              alt="Anniversary Cake"
-              title="Anniversary Cake"
-            />
-          </div>
-          <div>
-            <img
-              className="featured-img"
-              src={greenCake}
-              alt="Wedding Cake"
-              title="Wedding Cake"
-            />
-          </div>
-        </div> */}
       </div>
 
       <Swiper
@@ -200,8 +170,6 @@ const Contact = () => {
             src={lavenderCake}
             alt="Birthday Cake"
             title="Birthday Cake"
-            // width={320}
-            // height={320}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -210,8 +178,6 @@ const Contact = () => {
             src={brownCake}
             alt="Anniversary Cake"
             title="Anniversary Cake"
-            // width={320}
-            // height={320}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -220,8 +186,6 @@ const Contact = () => {
             src={greenCake}
             alt="Wedding Cake"
             title="Wedding Cake"
-            // width={320}
-            // height={320}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -230,8 +194,6 @@ const Contact = () => {
             src={movingCake}
             alt="Moving Cake"
             title="Moving Cake"
-            // width={320}
-            // height={320}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -240,8 +202,6 @@ const Contact = () => {
             src={fastCake}
             alt="Two-Fast Cake"
             title="Two-Fast Cake"
-            // width={320}
-            // height={320}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -250,8 +210,6 @@ const Contact = () => {
             src={sandlotCake}
             alt="Sandlot Cake"
             title="Sandlot Cake"
-            // width={320}
-            // height={320}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -260,8 +218,6 @@ const Contact = () => {
             src={flamingoCake}
             alt="Flamingo Cake"
             title="Flamingo Cake"
-            // width={320}
-            // height={320}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -270,8 +226,6 @@ const Contact = () => {
             src={sweetCake}
             alt="Sweet Cake"
             title="Sweet Cake"
-            // width={320}
-            // height={320}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -280,8 +234,6 @@ const Contact = () => {
             src={lavbdayCake}
             alt="Bday Cake"
             title="Bday Cake"
-            // width={320}
-            // height={320}
           />
         </SwiperSlide>
       </Swiper>

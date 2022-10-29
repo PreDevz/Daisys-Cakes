@@ -1,7 +1,7 @@
 import React from "react";
-import cuteGhost from "../imgs/homePageCakes/featured3.jpg";
-import diaMuertos from "../imgs/homePageCakes/featured2.jpg";
-import darkRose from "../imgs/homePageCakes/featured1.jpg";
+
+// Images 
+import { cuteGhost, diaMuertos, darkRose} from "../imgs";
 
 // Styles
 import "../sass/components/featComp.scss";
