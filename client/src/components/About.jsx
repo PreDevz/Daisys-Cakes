@@ -1,11 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // Images
 import aboutImg from "../imgs/homePageCakes/favicon.png";
 
 // Styles
 import "../sass/components/aboutComp.scss";
+
+// Link 
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (

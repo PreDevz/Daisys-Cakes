@@ -8,6 +8,7 @@ import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 /* loading the Stripe API. */
 import { loadStripe } from "@stripe/stripe-js";
 
+// Styles 
 import "../sass/components/tipsComp.scss";
 
 /* loading the Stripe API. */
