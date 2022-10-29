@@ -41,7 +41,7 @@ h2 {
   text-align: center;
   margin: 70px auto;
   padding: 0.8rem 1rem;
-  background: #fff;
+  background: $light-clr;
   border-radius: 5px;
   width: 50%;
   position: relative;
@@ -222,10 +222,15 @@ h2 {
   }
 }
 
-@media (max-width: 850) {
+@media (max-width: 850px) {
   .featured-img {
     width: 260px;
     height: 260px;
+  }
+
+  .popup {
+    margin: 35% auto;
+    width: 85%;
   }
 }
 
