@@ -25,7 +25,9 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="">cakesbydaisysalcido@gmail.com</a>
+              <a href="mailto:cakesbydaisysalcido@gmail.com">
+                cakesbydaisysalcido@gmail.com
+              </a>
             </li>
           </ul>
         </div>
