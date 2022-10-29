@@ -120,7 +120,7 @@ const Contact = () => {
       transition={{ delay: 0.23 }}
       exit={{ opacity: 0 }}
     >
-      <div className="featured-section">
+      <div className="contact-section">
         <h2 id="contact">Contact</h2>
         <p id="contact-text">
           Thank you for your interest in Daisy&#39;s Cakes where every cake is

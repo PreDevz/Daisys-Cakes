@@ -3,6 +3,10 @@
 @import "../../sass/variables/coreVars.scss";
 @import "../../sass/components/featComp.scss";
 
+.contact-section {
+  padding: 2rem 0;
+}
+
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -30,6 +34,7 @@ h2 {
 
 #contact-text {
   text-align: center;
+  padding: 1.5rem;
 }
 
 .popup {
@@ -131,7 +136,7 @@ h2 {
 .inquire-button-container {
   width: 100%;
   display: flex;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 #inquireBtn {
