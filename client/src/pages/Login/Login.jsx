@@ -19,7 +19,11 @@ import Auth from "../../utils/auth";
 /* Importing the motion library from framer-motion. */
 import { motion } from "framer-motion";
 
+// // importing navigate from react
+// import { useNavigate } from "react-router-dom";
+
 const Login = () => {
+  // const navigate = useNavigate();
   /* We're using the useState hook to keep track of the form state. */
   const [formState, setFormState] = useState({ email: "", password: "" });
 
@@ -46,6 +50,7 @@ const Login = () => {
       });
       /* We're using the Auth.login function to store the token in the local storage.  */
       Auth.login(data.login.token);
+      // navigate("");
     } catch (e) {
       console.error(e);
       setShowAlert(true);
@@ -59,44 +64,55 @@ const Login = () => {
   };
 
   return (
+    /* It's a framer-motion library that allows you to animate the div. */
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.23 }}
       exit={{ opacity: 0 }}
+      className="login-page"
     >
-      <div className="container">
+      <div className="login-container">
         <h2>Login</h2>
-        <form onSubmit={handleFormSubmit}>
-          <div>
-            <label htmlFor="email">Email Address: </label>
-            <input
-              placeholder="email@email.com"
-              name="email"
-              type="email"
-              id="email"
-              onChange={handleChange}
-            />
-          </div>
-          <div className="container">
-            <label htmlFor="pwd">Password: </label>
-            <input
-            placeholder="******"
-            name="password"
-            type="password"
-            id="pwd"
-            onChange={handleChange}
-            />
-          </div>
-          {error ? (
-            <div>
-              <p className="error-text"> The provided credentials are incorrect</p>
+        {data ? 
+          window.location.href="http://localhost/admin"
+         : (
+          <form onSubmit={handleFormSubmit}>
+            <div className="email-input">
+              <h3 htmlFor="email">Email Address</h3>
+              <input
+                placeholder="email@email.com"
+                name="email"
+                type="email"
+                id="email"
+                onChange={handleChange}
+              />
             </div>
-          ) : null}
+            <div className="password-input">
+              <h3 htmlFor="pwd">Password</h3>
+              <input
+                placeholder="password"
+                name="password"
+                type="password"
+                id="pwd"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <button className="signin-btn" type="submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        )}
+        {error ? (
           <div>
-            <button type="submit">Submit</button>
+            <p className="error-text">
+              {" "}
+              The provided credentials are incorrect
+            </p>
           </div>
-        </form>
+        ) : null}
       </div>
     </motion.div>
   );

@@ -7,7 +7,9 @@ import { Navbar, Footer } from "../components";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 // Pages
-import { Home, About, Contact, Admin, Login } from "./index";
+import { Home, About, Contact, Login } from "./index";
+
+// import { }
 
 /* A library that allows for animations to be added to the page. */
 import { AnimatePresence } from "framer-motion";
