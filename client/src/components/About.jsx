@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Images
 import aboutImg from "../imgs/homePageCakes/favicon.png";
@@ -21,9 +22,9 @@ const About = () => {
             <br />
             <br />
             <div className="about-btn-container">
-              <a href="#" className="about-btn">
-                Learn More
-              </a>
+              <Link to="/about">
+                <a className="about-btn">Learn More</a>
+              </Link>
             </div>
           </p>
         </div>
