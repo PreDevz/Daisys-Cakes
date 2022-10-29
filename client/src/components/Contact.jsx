@@ -3,15 +3,18 @@ import React, { useRef } from "react";
 // Email JS 
 import emailjs from "@emailjs/browser";
 
-import brownCake from "../imgs/contact/brown-floral.jpg";
-import lavenderCake from "../imgs/contact/lavender-butterflies.jpg";
-import greenCake from "../imgs/contact/green-with-rose.jpg";
-import movingCake from "../imgs/contact/moving-new-mexico-1.jpg";
-import fastCake from "../imgs/contact/two-fast.jpg";
-import sandlotCake from "../imgs/contact/sandlot-1.jpg";
-import flamingoCake from "../imgs/contact/flamingo.jpg";
-import sweetCake from "../imgs/contact/two-sweet.jpg";
-import lavbdayCake from "../imgs/contact/lavbday.jpg";
+// Images 
+// import brownCake from "../imgs/contact/brown-floral.jpg";
+// import lavenderCake from "../imgs/contact/lavender-butterflies.jpg";
+// import greenCake from "../imgs/contact/green-with-rose.jpg";
+// import movingCake from "../imgs/contact/moving-new-mexico-1.jpg";
+// import fastCake from "../imgs/contact/two-fast.jpg";
+// import sandlotCake from "../imgs/contact/sandlot-1.jpg";
+// import flamingoCake from "../imgs/contact/flamingo.jpg";
+// import sweetCake from "../imgs/contact/two-sweet.jpg";
+// import lavbdayCake from "../imgs/contact/lavbday.jpg";
+
+import { brownCake, lavenderCake, greenCake, movingCake, fastCake, sandlotCake, flamingoCake, sweetCake, lavbdayCake } from "../imgs";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
