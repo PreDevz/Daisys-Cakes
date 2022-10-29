@@ -1,4 +1,6 @@
 import React from "react";
+
+// Image 
 import heroImg from "../imgs/homePageCakes/hero-2.png";
 
 // Styles

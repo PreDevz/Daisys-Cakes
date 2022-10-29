@@ -1,5 +1,9 @@
 import React from "react";
+
+// Images 
 import footerImg from "../imgs/homePageCakes/text-logo.png";
+
+// Link 
 import { Link } from "react-router-dom";
 
 // Styles

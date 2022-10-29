@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+// Image 
+import Logo from "../imgs/homePageCakes/daisylogo.png";
+
 // Styles
 import "../sass/components/navbarComp.scss";
-import Logo from "../imgs/homePageCakes/daisylogo.png";
 
 function Navbar() {
   // State for whether the hamburger menu is active
