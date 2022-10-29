@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
+
 import emailjs from "@emailjs/browser";
 import brownCake from "../imgs/contact/brown-floral.jpg";
 import lavenderCake from "../imgs/contact/lavender-butterflies.jpg";
