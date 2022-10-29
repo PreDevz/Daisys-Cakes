@@ -136,17 +136,17 @@ h2 {
 .inquire-button-container {
   width: 100%;
   display: flex;
-  margin-top: 1.5rem;
+  // margin-top: 1.5rem; 
 }
 
 #inquireBtn {
   justify-content: center;
   text-align: center;
-  margin: 0 auto;
+  margin: 2rem auto;
   background-color: $pink-clr;
   padding: 0.8rem;
   border-radius: 8px;
-  color: #fff;
+  color: $light-clr;
   transition: 200ms;
 
   &:hover {
@@ -229,7 +229,7 @@ h2 {
   }
 
   .popup {
-    margin: 35% auto;
+    margin: 30% auto;
     width: 85%;
   }
 }
