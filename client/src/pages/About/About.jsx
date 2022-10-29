@@ -4,9 +4,9 @@ import React from "react";
 import "./about.scss";
 
 // Images
-import Selfie from "../../imgs/daisy-selfie.jpeg";
+import Selfie from "../../imgs/about/daisy-selfie.jpeg";
 import Cakes from "../../imgs/homePageCakes/cupcakes.jpg";
-import LCBLogo from "../../imgs/Le_Cordon_Bleu_logo.jpeg";
+import LCBLogo from "../../imgs/about/Le_Cordon_Bleu_logo.jpeg";
 
 /* Importing the motion library from framer-motion. */
 import { motion } from "framer-motion";

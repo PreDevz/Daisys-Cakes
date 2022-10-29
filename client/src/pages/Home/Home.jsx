@@ -1,9 +1,9 @@
 import React from "react";
 
-// Components 
+// Components
 import { Hero, About, Featured, Contact, TipsButton } from "../../components";
 
-// Styles 
+// Styles
 import "./home.scss";
 
 /* Importing the framer-motion library. */
@@ -18,7 +18,6 @@ const Home = () => {
       exit={{ opacity: 0 }}
       id="homePage"
     >
-
       <Hero />
       {/* So the page stylings don't effect the hero section  */}
       <div className="page">
