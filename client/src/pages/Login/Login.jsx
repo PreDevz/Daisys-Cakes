@@ -4,9 +4,6 @@ import React, { useState } from "react";
 /* Importing the login.scss file. */
 import "./login.scss";
 
-/* Importing the Link component from the react-router-dom library. */
-import { Link } from "react-router-dom";
-
 /* Importing the useMutation hook from the apollo client. */
 import { useMutation } from "@apollo/client";
 
@@ -19,11 +16,7 @@ import Auth from "../../utils/auth";
 /* Importing the motion library from framer-motion. */
 import { motion } from "framer-motion";
 
-// // importing navigate from react
-// import { useNavigate } from "react-router-dom";
-
 const Login = () => {
-  // const navigate = useNavigate();
   /* We're using the useState hook to keep track of the form state. */
   const [formState, setFormState] = useState({ email: "", password: "" });
 
@@ -50,7 +43,6 @@ const Login = () => {
       });
       /* We're using the Auth.login function to store the token in the local storage.  */
       Auth.login(data.login.token);
-      // navigate("");
     } catch (e) {
       console.error(e);
       setShowAlert(true);
@@ -72,10 +64,13 @@ const Login = () => {
       exit={{ opacity: 0 }}
       className="login-page"
     >
-      <div className="login-login-container">
+      <div className="login-container">
         <h2>Login</h2>
         {data ? 
-          window.location.href="/admin"
+            (<p>
+              Successful! Redirecting...
+              { window.location.href="/admin" }
+           </p>)
          : (
           <form onSubmit={handleFormSubmit}>
             <div className="email-input">
