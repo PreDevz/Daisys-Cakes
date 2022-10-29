@@ -32,7 +32,7 @@ ADMIN_EMAIL=<admin_email>
 ADMIN_PASSWORD=<admin_password>
 ```
 
-_This application utilizes EmailJS for the the automatic email form You must create an account on the website and input your credentials in the format below. If you do not wish to use the EmailJS functionality then steps 4 and 5 can be skipped_
+_This application utilizes EmailJS for the the automatic email form You must create an account on the website and input your credentials in the format below. If you do not wish to use the EmailJS functionality then step 4 can be skipped_
 
 4. Change the value of the `ADMIN` variables to whatever you want your administrator login for the website to be. 5. Navigate to the `/client` folder and create a new file in the root called `.env`. Within this file, copy and paste the following:
 
