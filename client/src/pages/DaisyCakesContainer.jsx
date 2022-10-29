@@ -7,7 +7,7 @@ import { Navbar, Footer } from "../components";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 // Pages
-import { Home, About, Contact, Login } from "./index";
+import { Home, About, Login } from "./index";
 
 // import { }
 
@@ -17,20 +17,19 @@ import { AnimatePresence } from "framer-motion";
 const DaisyCakesContainer = () => {
   const location = useLocation();
   return (
-    // <React.StrictMode>
+  <React.StrictMode>
     <AnimatePresence>
       <Navbar />
       <main>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </main>
       <Footer />
     </AnimatePresence>
-    // </React.StrictMode>
+  </React.StrictMode>
   );
 };
 

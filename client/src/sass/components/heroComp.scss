@@ -3,22 +3,23 @@
 .hero-section {
   display: flex;
   width: 100%;
-  overflow: hidden;
+  background: transparent;
   justify-content: center;
-  align-items: center;
-  justify-self: center;
-  max-height: auto;
+  overflow: hidden;
+  position: relative;
+
+  .hero-img { 
+    margin: 0 auto;
+    width: 87vw;
+  }
 }
 
-.hero-img {
-  width: 90vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+// Media Queries 
+
+// Mobile Screens 
 
 @media (max-width: 765px) {
   .hero-img {
-    width: 155vw;
+    width: 155vw !important;
   }
 }

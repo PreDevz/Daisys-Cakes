@@ -22,7 +22,6 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 // Registration of the adapter
-const AdminBroMongoose = require("@admin-bro/mongoose");
 const adminRouter = require("./router/admin.router");
 
 /* If there is a port defined in the environment, use that. If there is not, use 3001. */
@@ -42,7 +41,7 @@ const server = new ApolloServer({
 /* This is middleware that is parsing the request body. */
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use('/admin', adminRouter);
+app.use("/admin", adminRouter);
 
 /* This is middleware that is serving up the static files for the React app. */
 if (process.env.NODE_ENV === "production") {

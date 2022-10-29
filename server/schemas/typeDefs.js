@@ -30,8 +30,9 @@ const typeDefs = gql`
   }
   type Mutation {
     login(email: String!, password: String!): Auth
+    addAdmin(username: String!, email: String!, password: String!): Auth
     addedCake(title: String!, description: String, cakeUrl: String): Admin
-    removeCake(_id: String!): Admin
+    removeCake(title: String!): Admin
     addCake(input: CakeInput): Admin
   }
 `;

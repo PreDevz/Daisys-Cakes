@@ -72,10 +72,10 @@ const Login = () => {
       exit={{ opacity: 0 }}
       className="login-page"
     >
-      <div className="login-container">
+      <div className="login-login-container">
         <h2>Login</h2>
         {data ? 
-          window.location.href="http://localhost/admin"
+          window.location.href="/admin"
          : (
           <form onSubmit={handleFormSubmit}>
             <div className="email-input">

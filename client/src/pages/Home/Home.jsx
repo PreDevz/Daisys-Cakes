@@ -1,9 +1,9 @@
 import React from "react";
 
-// Components 
-import { Hero, About, Featured } from "../../components";
+// Components
+import { Hero, About, Featured, Contact, TipsButton } from "../../components";
 
-// Styles 
+// Styles
 import "./home.scss";
 
 /* Importing the framer-motion library. */
@@ -17,11 +17,18 @@ const Home = () => {
       transition={{ delay: 0.23 }}
       exit={{ opacity: 0 }}
       id="homePage"
-      className="page"
     >
       <Hero />
-      <Featured />
-      <About />
+      {/* So the page stylings don't effect the hero section  */}
+      <div className="page">
+        <Featured />
+        <About />
+        <Contact />
+      </div>
+      <TipsButton
+        amount={"10.00"}
+        itemID="price_1LxN1yABGjvOJdT1PZmRUIqJ"
+      ></TipsButton>
     </motion.div>
   );
 };

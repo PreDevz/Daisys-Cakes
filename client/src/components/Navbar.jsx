@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
+// Image 
+import Logo from "../imgs/homePageCakes/daisylogo.png";
 
 // Styles
 import "../sass/components/navbarComp.scss";
-import Logo from "../imgs/homePageCakes/text-logo-cake-clear.png";
+
+// Link 
+import { Link } from "react-router-dom";
 
 function Navbar() {
   // State for whether the hamburger menu is active
@@ -40,11 +44,6 @@ function Navbar() {
           >
             Instagram
           </a>
-        </li>
-        <li className="nav-item">
-          <Link onClick={handleToggle} to="/contact" className="nav-link">
-            Contact
-          </Link>
         </li>
         <li className="nav-item">
           <Link onClick={handleToggle} to="/login" className="nav-link">

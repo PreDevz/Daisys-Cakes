@@ -5,7 +5,10 @@
   "proxy": "http://localhost:3001",
   "dependencies": {
     "@apollo/client": "^3.7.0",
+    "@chakra-ui/react": "^2.3.6",
     "@emailjs/browser": "^3.7.0",
+    "@stripe/react-stripe-js": "^1.14.0",
+    "@stripe/stripe-js": "^1.42.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -18,7 +21,8 @@
     "react-scripts": "5.0.1",
     "sass": "^1.55.0",
     "sweetalert": "^2.1.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "swiper": "^8.4.4"
   },
   "scripts": {
     "start": "react-scripts start",

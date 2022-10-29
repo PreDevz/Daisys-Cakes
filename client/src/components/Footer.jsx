@@ -1,5 +1,9 @@
 import React from "react";
+
+// Images 
 import footerImg from "../imgs/homePageCakes/text-logo.png";
+
+// Link 
 import { Link } from "react-router-dom";
 
 // Styles
@@ -17,7 +21,7 @@ const Footer = () => {
           <h4>Daisy&#39;s Cakes</h4>
           <ul className="footer-ul">
             <li>
-              <a href="">Learn More</a>
+              <Link to="/about">Learn more</Link>
             </li>
             <li>
               <a href="https://www.instagram.com/daisycakes87/?next=%2Fdaisycakes87%2F">
@@ -25,7 +29,9 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="">cakesbydaisysalcido@gmail.com</a>
+              <a href="mailto:cakesbydaisysalcido@gmail.com">
+                cakesbydaisysalcido@gmail.com
+              </a>
             </li>
           </ul>
         </div>
@@ -41,7 +47,7 @@ const Footer = () => {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/login">Login</Link>
             </li>
           </ul>
         </div>
