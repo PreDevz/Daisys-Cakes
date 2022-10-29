@@ -127,9 +127,9 @@ const Contact = () => {
       <div className="featured-section">
         <h2 id="contact">Contact</h2>
         <p id="contact-text">
-          Thank you for your interest in Daisy&#39;s Cakes! Where every cake is
-          guarenteed to be made with love. Please click on the inquire form
-          below and we&#39;ll get back to you as soon we can!
+          Thank you for your interest in Daisy&#39;s Cakes where every cake is
+          guarenteed to be baked with love. Please click on the button below and
+          we&#39;ll get back to you as soon we can!
         </p>
         {/* <div className="featured-page-2">
           <div>
