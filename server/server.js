@@ -16,6 +16,14 @@ const { typeDefs, resolvers } = require("./schemas");
 /* Importing the connection to the database. */
 const db = require("./config/connection");
 
+require("dotenv").config();
+
+// Express router for Admin-Bro
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+// Registration of the adapter
+const adminRouter = require("./router/admin.router");
+
 /* If there is a port defined in the environment, use that. If there is not, use 3001. */
 const PORT = process.env.PORT || 3001;
 
@@ -33,6 +41,7 @@ const server = new ApolloServer({
 /* This is middleware that is parsing the request body. */
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use("/admin", adminRouter);
 
 /* This is middleware that is serving up the static files for the React app. */
 if (process.env.NODE_ENV === "production") {
@@ -47,6 +56,7 @@ app.get("/", (req, res) => {
 
 /* Create a new instance of an Apollo server with the GraphQL schema */
 const startApolloServer = async (typeDefs, resolvers) => {
+  await app.listen(4040, () => console.log("Admin-bro app listening on port 4040!"));
   await server.start();
   server.applyMiddleware({ app });
 

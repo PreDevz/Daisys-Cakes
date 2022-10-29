@@ -4,9 +4,6 @@ import React, { useState } from "react";
 /* Importing the login.scss file. */
 import "./login.scss";
 
-/* Importing the Link component from the react-router-dom library. */
-import { Link } from "react-router-dom";
-
 /* Importing the useMutation hook from the apollo client. */
 import { useMutation } from "@apollo/client";
 
@@ -69,11 +66,19 @@ const Login = () => {
     >
       <div className="login-container">
         <h2>Login</h2>
-        {data ? (
-          <p>
-            Success! You may now head <Link to="/">back to the homepage.</Link>
-          </p>
-        ) : (
+        {data ? 
+          (
+            <p>
+            Successful! Redirecting...
+            <br />
+
+            {/* Do not show "/admin" after trying to login  */}
+            <div className="hidden">
+              {window.location.href = "/admin"}
+            </div>
+            </p>
+          )
+         : (
           <form onSubmit={handleFormSubmit}>
             <div className="email-input">
               <h3 htmlFor="email">Email Address</h3>
