@@ -15,7 +15,7 @@ import { AnimatePresence } from "framer-motion";
 const DaisyCakesContainer = () => {
   const location = useLocation();
   return (
-    // <React.StrictMode>
+  <React.StrictMode>
     <AnimatePresence>
       <Navbar />
       <main>
@@ -27,7 +27,7 @@ const DaisyCakesContainer = () => {
       </main>
       <Footer />
     </AnimatePresence>
-    // </React.StrictMode>
+  </React.StrictMode>
   );
 };
 
