@@ -1,5 +1,6 @@
 // Contact Model
 
+// Imports 
 @import "../../sass/variables/coreVars.scss";
 @import "../../sass/components/featComp.scss";
 
@@ -7,6 +8,7 @@
   padding: 2rem 0;
 }
 
+// Background overlay 
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -37,6 +39,7 @@ h2 {
   padding: 1.5rem;
 }
 
+// Model 
 .popup {
   text-align: center;
   margin: 70px auto;
@@ -133,10 +136,11 @@ h2 {
   }
 }
 
+// Contact button 
+
 .inquire-button-container {
   width: 100%;
   display: flex;
-  // margin-top: 1.5rem; 
 }
 
 #inquireBtn {
@@ -157,33 +161,6 @@ h2 {
   }
 }
 
-.featured-section {
-  width: 100%;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 0;
-}
-
-.featured-page-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 420px;
-  margin: 1rem 0;
-
-  div {
-    margin: 0 0.8rem;
-    width: 40%;
-    height: 100%;
-    max-height: 360px;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-}
-
 .featured-img {
   max-width: 320px;
   max-height: 320px;
@@ -198,6 +175,10 @@ h2 {
     border: 1px solid $pink-clr;
   }
 }
+
+// Media Queries 
+
+// Ipads
 
 @media (max-width: 1050px) {
   .featured-section {
@@ -262,9 +243,6 @@ h2 {
 @media (max-width: 768px) {
   .featured-section {
     .featured-page-2 {
-      // align-items: center;
-      // flex-wrap: wrap;
-      // flex-direction: column;
 
       div {
         p {

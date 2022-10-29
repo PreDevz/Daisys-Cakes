@@ -4,13 +4,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
-// Manuale
+// Manuale Font
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
-
-// Normal Text
-
-// @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
 
 // Import Colors
 
@@ -94,6 +90,8 @@ h2 {
   margin: 0 auto;
   max-width: 1180px;
 }
+
+// Media Queries 
 
 @media (max-width: 768px) {
   main {

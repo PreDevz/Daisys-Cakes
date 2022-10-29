@@ -1,6 +1,6 @@
 import React from "react";
 
-// Component
+// Components
 import { Navbar, Footer } from "../components";
 
 // Router
@@ -8,8 +8,6 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 
 // Pages
 import { Home, About, Login } from "./index";
-
-// import { }
 
 /* A library that allows for animations to be added to the page. */
 import { AnimatePresence } from "framer-motion";
