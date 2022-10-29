@@ -1,7 +1,7 @@
 import React from "react";
 
 // Images
-import aboutImg from "../imgs/homePageCakes/cupcakes.jpg";
+import aboutImg from "../imgs/homePageCakes/favicon.png";
 
 // Styles
 import "../sass/components/aboutComp.scss";
