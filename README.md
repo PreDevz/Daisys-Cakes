@@ -151,4 +151,4 @@ LinkedIn: [Eric Doan](https://www.linkedin.com/in/ericdoan85/)
 
 ---
 
-Copyright © 2022 Pop Umai - All Rights Reserved
+Copyright © 2022 Daisy's Cakes - All Rights Reserved
