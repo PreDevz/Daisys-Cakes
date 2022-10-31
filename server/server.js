@@ -39,9 +39,9 @@ const server = new ApolloServer({
 });
 
 /* This is middleware that is parsing the request body. */
+app.use("/admin", adminRouter);
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use("/admin", adminRouter);
 
 /* This is middleware that is serving up the static files for the React app. */
 if (process.env.NODE_ENV === "production") {
