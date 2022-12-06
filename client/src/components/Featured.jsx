@@ -11,29 +11,29 @@ const Featured = () => {
     <section className="featured-section">
       <div className="container">
         <h2>Featured</h2>
-        <h3>Featured Cakes of the Month: November</h3>
+        <h3>Featured Cakes of the Month: December</h3>
 
         <div className="featured-page-1">
-          <div>
+         <div>
             <img
               className="featured-img"
-              src="https://i.imgur.com/277gr9O.jpg"
+              src="https://i.imgur.com/x58ymAo.jpg"
             />
-            <p>Dia De Los Muertos</p>
+            <p>Sports Mix</p>
           </div>
           <div>
             <img
               className="featured-img"
-              src="https://i.imgur.com/JJtasCQ.jpg"
+              src="https://i.imgur.com/1ooriCN.jpg"
             />
-            <p>Vintage Cask</p>
+            <p>Fortnite Birthday</p>
           </div>
           <div>
             <img
               className="featured-img"
-              src="https://i.imgur.com/iw0XnNg.jpg"
+              src="https://i.imgur.com/MSKKhRU.jpg"
             />
-            <p>Sid the Science Kid</p>
+            <p>My Neighbor Totoro</p>
           </div>
         </div>
       </div>
