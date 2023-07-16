@@ -11,7 +11,7 @@ const Featured = () => {
     <section className="featured-section">
       <div className="container">
         <h2>Featured</h2>
-        <h3>Featured Cakes of the Month: November</h3>
+        <h3>Featured Cakes of the Month</h3>
 
         <div className="featured-page-1">
           <div>
